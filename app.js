@@ -20,7 +20,7 @@ const FALLBACK_REPOS = [
   {
     name: "Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-",
     displayName: "Masters Thesis: Vehicle Exterior Damage Detection & Inspection",
-    description: "An end-to-end computer vision application for vehicle exterior damage detection, segmentation, and inspection grading powered by Prototypical Mask R-CNN (ResNet-50-FPN backbone) trained on the CarDD dataset. Features interactive Streamlit web dashboard with real-time KPI metrics.",
+    description: "An end-to-end computer vision application for vehicle exterior damage detection, segmentation, and inspection grading powered by Prototypical Mask R-CNN (Mask R-CNN with a prototypical head & ResNet-50 backbone) trained on the CarDD dataset. Features interactive Streamlit web dashboard with real-time KPI metrics.",
     language: "Python",
     html_url: "https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-",
     stargazers_count: 1,
@@ -89,10 +89,10 @@ function initRoleTyping() {
   if (!element) return;
 
   const roles = [
-    "Computer Vision & AI Researcher",
-    "MSc Postgraduate @ Univ. of Hertfordshire",
-    "Few-Shot Object Detection Specialist",
-    "Prototypical Mask R-CNN Developer",
+    "MSc Data Science & Analytics Graduate",
+    "Computer Vision & Deep Learning",
+    "Prototypical Mask R-CNN Specialist",
+    "Few-Shot Object Detection",
     "Open-Source GitHub Contributor"
   ];
 
@@ -563,9 +563,9 @@ function initTerminal() {
     "git log -n 3": () => COMMANDS["git log"](),
     "cat thesis.md": () => `
       <div class="term-line"><span class="term-accent"># Vehicle Exterior Damage Detection & Inspection Grading</span></div>
-      <div class="term-line">Postgraduate MSc Thesis — University of Hertfordshire (Student ID: 23097240)</div>
+      <div class="term-line">MSc in Data Science and Analytics with Advanced Research — University of Hertfordshire</div>
       <div class="term-line">-------------------------------------------------------------------</div>
-      <div class="term-line">• <span class="term-emerald">Architecture:</span> Prototypical Mask R-CNN (ResNet-50-FPN)</div>
+      <div class="term-line">• <span class="term-emerald">Research Area:</span> Prototypical Mask R-CNN (Mask R-CNN with Prototypical Head & ResNet-50 Backbone)</div>
       <div class="term-line">• <span class="term-emerald">Dataset:</span> CarDD (Car Damage Dataset)</div>
       <div class="term-line">• <span class="term-emerald">Damage Classes:</span> Dent, Scratch, Crack, Glass Shatter, Lamp Broken, Tire Flat</div>
       <div class="term-line">• <span class="term-emerald">Interactive Dashboard:</span> Multi-source image input, real-time KPI metrics, NMS IoU tuning</div>
@@ -581,8 +581,9 @@ function initTerminal() {
       <div class="term-line">  "login": "ZAHIDUL-HOQUE",</div>
       <div class="term-line">  "name": "ZAHIDUL HOQUE",</div>
       <div class="term-line">  "institution": "University of Hertfordshire",</div>
+      <div class="term-line">  "degree": "MSc in Data Science and Analytics with Advanced Research",</div>
       <div class="term-line">  "location": "United Kingdom",</div>
-      <div class="term-line">  "bio": "AI Researcher & Computer Vision Engineer",</div>
+      <div class="term-line">  "bio": "MSc Data Science & Analytics Graduate | Computer Vision & Deep Learning",</div>
       <div class="term-line">  "hireable": true,</div>
       <div class="term-line">  "public_repos": 3,</div>
       <div class="term-line">  "primary_language": "Python"</div>
@@ -599,7 +600,7 @@ function initTerminal() {
       <div class="term-line"><span class="term-emerald">      \\(_=_)//     </span> <span class="term-purple">CPU:</span> Neural Vision Processing Unit (CUDA)</div>
       <div class="term-line"><span class="term-emerald">       (:| |:)      </span> <span class="term-purple">Primary Stack:</span> PyTorch 2.4.0 + Python 3.10</div>
       <div class="term-line"><span class="term-emerald">        || ||       </span> <span class="term-purple">Location:</span> United Kingdom (UK)</div>
-      <div class="term-line"><span class="term-emerald">        () ()       </span> <span class="term-purple">Status:</span> Open for AI/CV & Engineering roles</div>
+      <div class="term-line"><span class="term-emerald">        () ()       </span> <span class="term-purple">Status:</span> Graduated MSc Data Science & Analytics | Open for Roles</div>
     `,
     projects: () => `
       <div class="term-line">1. <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-" target="_blank" class="term-accent">Masters-thesis-project-of-Zahidul-Hoque...</a> [Python / Mask R-CNN]</div>

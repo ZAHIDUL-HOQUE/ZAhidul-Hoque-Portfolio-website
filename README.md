@@ -1,6 +1,6 @@
 # Zahidul Hoque — GitHub Centric Developer & AI Portfolio
 
-> Premium personal portfolio website engineered specifically around **GitHub profile `@ZAHIDUL-HOQUE`** and research in **Computer Vision, Deep Learning, and Few-Shot Object Detection** at the **University of Hertfordshire**.
+> Personal portfolio website engineered specifically around **GitHub profile `@ZAHIDUL-HOQUE`** and postgraduate work by **Zahidul Hoque** (MSc in Data Science and Analytics with Advanced Research, University of Hertfordshire) specializing in **Prototypical Mask R-CNN** (Mask R-CNN with a prototypical head and ResNet-50 backbone) and **Computer Vision**.
 
 ---
 
@@ -9,13 +9,13 @@
 1. **GitHub-Centric Identity & Live Sync**:
    - Seamlessly tied to [`https://github.com/ZAHIDUL-HOQUE`](https://github.com/ZAHIDUL-HOQUE).
    - Dynamic repository fetcher with offline/cached fallback so the site always displays repositories with zero delay or API rate-limit dropouts.
-   - Interactive 3D-tilt **GitHub Profile Card** highlighting student affiliation, verified badge, pixel-art portrait, and 1-click clone triggers.
+   - Interactive 3D-tilt **GitHub Profile Card** highlighting graduate background, verified badge, pixel-art portrait, and 1-click clone triggers.
 
 2. **Interactive 52-Week Contribution Heatmap**:
    - Custom calendar grid modeled after GitHub's contribution graph with tooltips and commit frequency.
 
 3. **Master's Thesis Interactive Simulator**:
-   - Interactive demonstration of Zahidul's postgraduate thesis: *Vehicle Exterior Damage Detection, Instance Segmentation & Inspection Grading*.
+   - Interactive demonstration of Zahidul's postgraduate thesis: *Vehicle Exterior Damage Detection, Instance Segmentation & Inspection Grading via Prototypical Mask R-CNN (ResNet-50 backbone)*.
    - Live defect selector for the 6 CarDD categories:
      - 🟠 **Dent** (`#FF7A00`)
      - 🔵 **Scratch** (`#00D2FF`)
