@@ -609,7 +609,7 @@ function initTerminal() {
     `,
     contact: () => `
       <div class="term-line">• GitHub: <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" class="term-accent">https://github.com/ZAHIDUL-HOQUE</a></div>
-      <div class="term-line">• Email:  <span class="term-emerald">zahidulhoque.dev@gmail.com</span></div>
+      <div class="term-line">• Email:  <span class="term-emerald">zahidulhoqueomy@gmail.com</span></div>
       <div class="term-line">• Location: United Kingdom (UK)</div>
     `,
     clear: () => "CLEAR_SIGNAL"
@@ -748,8 +748,8 @@ function initClipboardHandlers() {
   const emailCard = document.getElementById("copy-email-card");
   if (emailCard) {
     emailCard.addEventListener("click", () => {
-      navigator.clipboard.writeText("zahidulhoque.dev@gmail.com").then(() => {
-        showToast(`Copied email to clipboard: <span class="toast-code">zahidulhoque.dev@gmail.com</span>`);
+      navigator.clipboard.writeText("zahidulhoqueomy@gmail.com").then(() => {
+        showToast(`Copied email to clipboard: <span class="toast-code">zahidulhoqueomy@gmail.com</span>`);
       });
     });
   }
@@ -757,7 +757,7 @@ function initClipboardHandlers() {
   const cardEmailBtn = document.getElementById("card-copy-email-btn");
   if (cardEmailBtn) {
     cardEmailBtn.addEventListener("click", () => {
-      const email = cardEmailBtn.getAttribute("data-email") || "zahidulhoque.dev@gmail.com";
+      const email = cardEmailBtn.getAttribute("data-email") || "zahidulhoqueomy@gmail.com";
       navigator.clipboard.writeText(email).then(() => {
         showToast(`Copied email to clipboard: <span class="toast-code">${email}</span>`);
         
@@ -864,7 +864,7 @@ function initContactForm() {
     const subject = document.getElementById("contact-subject").value;
     const message = document.getElementById("contact-message").value;
 
-    const mailtoUrl = `mailto:zahidulhoque.dev@gmail.com?subject=${encodeURIComponent(`[Portfolio] ${subject} from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail / GitHub: ${email}\n\nMessage:\n${message}`)}`;
+    const mailtoUrl = `mailto:zahidulhoqueomy@gmail.com?subject=${encodeURIComponent(`[Portfolio] ${subject} from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail / GitHub: ${email}\n\nMessage:\n${message}`)}`;
 
     showToast(`Thank you, <strong>${name}</strong>! Preparing email dispatch...`);
 
