@@ -942,6 +942,13 @@ section {
   color: var(--text-muted);
 }
 
+.card-action-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
 .btn-github-follow {
   background: #238636;
   color: #fff;
@@ -954,6 +961,59 @@ section {
 .btn-github-follow:hover {
   background: #2ea043;
   box-shadow: 0 4px 16px rgba(57, 211, 83, 0.4);
+}
+
+.card-sub-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-linkedin {
+  background: rgba(10, 102, 194, 0.16);
+  color: #70b5f9;
+  border: 1px solid rgba(10, 102, 194, 0.45);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-linkedin:hover {
+  background: #0a66c2;
+  color: #fff;
+  border-color: #0a66c2;
+  box-shadow: 0 4px 16px rgba(10, 102, 194, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-copy-email {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-copy-email:hover {
+  background: var(--bg-elevated);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+  box-shadow: 0 4px 16px rgba(88, 166, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-copy-email.copied {
+  background: rgba(35, 134, 54, 0.25);
+  color: var(--accent-green-bright);
+  border-color: var(--accent-green);
 }
 
 /* ==========================================================================

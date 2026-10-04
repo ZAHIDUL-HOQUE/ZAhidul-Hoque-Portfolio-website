@@ -753,6 +753,27 @@ function initClipboardHandlers() {
       });
     });
   }
+
+  const cardEmailBtn = document.getElementById("card-copy-email-btn");
+  if (cardEmailBtn) {
+    cardEmailBtn.addEventListener("click", () => {
+      const email = cardEmailBtn.getAttribute("data-email") || "zahidulhoque.dev@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        showToast(`Copied email to clipboard: <span class="toast-code">${email}</span>`);
+        
+        cardEmailBtn.classList.add("copied");
+        const textSpan = cardEmailBtn.querySelector(".btn-email-text");
+        if (textSpan) textSpan.textContent = "Copied!";
+        
+        setTimeout(() => {
+          cardEmailBtn.classList.remove("copied");
+          if (textSpan) textSpan.textContent = "Copy Email";
+        }, 2200);
+      }).catch(() => {
+        showToast(`Email: <span class="toast-code">${email}</span>`);
+      });
+    });
+  }
 }
 
 function showToast(messageHtml) {
