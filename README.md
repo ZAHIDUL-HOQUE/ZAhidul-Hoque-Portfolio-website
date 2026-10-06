@@ -1,60 +1,47 @@
-# Zahidul Hoque — GitHub Centric Developer & AI Portfolio
+# Zahidul Hoque — Academic & Engineering Portfolio (GitHub Native Edition)
 
-> Personal portfolio website engineered specifically around **GitHub profile `@ZAHIDUL-HOQUE`** and postgraduate work by **Zahidul Hoque** (MSc in Data Science and Analytics with Advanced Research, University of Hertfordshire) specializing in **Prototypical Mask R-CNN** (Mask R-CNN with a prototypical head and ResNet-50 backbone) and **Computer Vision**.
+> Personal portfolio and academic research hub engineered specifically around **GitHub profile `@ZAHIDUL-HOQUE`** and postgraduate / Ph.D. candidacy research by **Zahidul Hoque** (Aspiring Ph.D. Researcher in AI, Computer Vision & Autonomous Systems; MSc in Data Science and Analytics with Advanced Research, University of Hertfordshire; BSc in Computer Science, Beijing Institute of Technology).
 
 ---
 
-## 🌟 Key Features
+## 🌟 Architecture & Features
 
-1. **GitHub-Centric Identity & Live Sync**:
-   - Seamlessly tied to [`https://github.com/ZAHIDUL-HOQUE`](https://github.com/ZAHIDUL-HOQUE).
-   - Dynamic repository fetcher with offline/cached fallback so the site always displays repositories with zero delay or API rate-limit dropouts.
-   - Interactive 3D-tilt **GitHub Profile Card** highlighting graduate background, verified badge, pixel-art portrait, and 1-click clone triggers.
+Built using **Vanilla Web Standards (HTML5, Vanilla CSS3, Modern JavaScript)** adhering to the **GitHub Primer Design System** for a clean, content-first, developer-native aesthetic.
 
-2. **Interactive 52-Week Contribution Heatmap**:
-   - Custom calendar grid modeled after GitHub's contribution graph with tooltips and commit frequency.
+1. **GitHub Native Profile Layout**:
+   - Iconic GitHub two-column structure with left user sidebar (pixel-art avatar, status badge, verified contact metadata, achievements, and academic supervisor reference).
+   - Underline profile tab navigation with URL hash synchronisation (`#overview`, `#research`, `#repositories`, `#experience`, `#skills`, `#terminal`, `#contact`).
 
-3. **Master's Thesis Interactive Simulator**:
-   - Interactive demonstration of Zahidul's postgraduate thesis: *Vehicle Exterior Damage Detection, Instance Segmentation & Inspection Grading via Prototypical Mask R-CNN (ResNet-50 backbone)*.
-   - Live defect selector for the 6 CarDD categories:
-     - 🟠 **Dent** (`#FF7A00`)
-     - 🔵 **Scratch** (`#00D2FF`)
-     - 🟣 **Crack** (`#A855F7`)
-     - 🔴 **Glass Shatter** (`#FF2A6D`)
-     - 🟡 **Lamp Broken** (`#FACC15`)
-     - 🟢 **Tire Flat** (`#10B981`)
-   - Interactive bounding box positioning, segmentation masks, confidence thresholds, and real-time KPI metrics.
+2. **Academic & Research Integration**:
+   - Comprehensive integration of all qualifications, publications, research contributions, and career milestones.
 
-4. **Interactive Developer Git CLI / Terminal Playground**:
-   - Monospace bash console supporting commands like `help`, `git status`, `git log`, `cat thesis.md`, `zahidul --skills`, `neofetch`, `curl github/zahidul`, and `clear`.
-   - Quick command chips for instant mobile and desktop exploration.
+3. **Master's Thesis & Technical Contributions (7COM1039)**:
+   - *Prototypical Mask R-CNN for Vehicle Exterior Damage Detection* (Supervisor: Dr. Joseph Reddington).
+   - Detailed breakdown of the novel Squared Euclidean Prototypical Predictor head, extreme class imbalance mitigation on the CarDD benchmark, and hyperspherical latent geometry ($d^2 = 2 - 2\cos(\theta) \approx 2.0$, $\theta \approx 90^\circ$).
+   - Empirical evaluation metrics across 810 test images: **mAP 0.319 (IoU 0.50:0.95)**, **AP@50 0.630**, **AR 0.436**.
+   - Interactive CarDD Defect Inspector & Telemetry Simulator with 6 defect classes (`Dent`, `Scratch`, `Crack`, `Glass Shatter`, `Lamp Broken`, `Tire Flat`).
 
-5. **Toast Notifications & Copy-to-Clipboard**:
-   - One-click copy for `git clone` URLs and contact email with feedback notifications.
+4. **UrbanITY Lab Alignment & Ph.D. Research Statement**:
+   - Multi-scale LiDAR & Camera sensor fusion (DINOSTAR, LiGuard).
+   - Digital twins & Sim2Real domain shift mitigation (UrbanTwin, LUMPI, V2X-Real-IC, TUMTraf-I).
+   - Real-time deep learning for traffic safety & Vulnerable Road User (VRU) protection.
+
+5. **Live Repositories & 52-Week Contribution Calendar**:
+   - Filterable repositories list with instant search and language category tabs (`All`, `Python & AI`, `Web`).
+   - GitHub contribution graph modeled with authentic dark-theme contribution scales.
+
+6. **Interactive Academic Git CLI / Terminal**:
+   - Bash console supporting commands: `cat thesis.md`, `cat education.md`, `cat experience.md`, `cat lab_alignment.md`, `zahidul --skills`, `neofetch`, `git status`, `git log`, `curl github/zahidul`, `help`, and `clear`.
 
 ---
 
 ## 🚀 Running Locally
 
-The portfolio is built with pure, modern vanilla web standards (**HTML5**, **Vanilla CSS3**, and **Modern JavaScript**) requiring zero external framework build steps.
-
-### Option A: Using the built-in Node server
 ```bash
+# Start local Node server
 node server.js
 ```
-Then open `http://127.0.0.1:3000` in your browser.
-
-### Option B: Using any static server or VS Code Live Server
-- You can simply open `index.html` directly in your browser or right click `index.html` in VS Code and choose **Open with Live Server**.
-
----
-
-## 🌐 Deploying to GitHub Pages (1-Click)
-
-1. Push this folder to a GitHub repository (e.g. `ZAHIDUL-HOQUE.github.io` or `portfolio`).
-2. In GitHub, go to **Settings** &rarr; **Pages**.
-3. Under **Branch**, select `main` (root) and click **Save**.
-4. Your website will be live at `https://zahidul-hoque.github.io`!
+Then visit `http://127.0.0.1:3000` in your web browser.
 
 ---
 

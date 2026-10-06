@@ -4,1123 +4,1261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zahidul Hoque | Data Science & Computer Vision | GitHub Portfolio</title>
+  <title>Zahidul Hoque (@ZAHIDUL-HOQUE) | AI & Computer Vision Portfolio</title>
   <meta name="description"
-    content="Portfolio of Zahidul Hoque (@ZAHIDUL-HOQUE) - MSc in Data Science and Analytics with Advanced Research graduate from University of Hertfordshire. Explores repositories, Prototypical Mask R-CNN with ResNet-50 backbone, and computer vision projects.">
+    content="Academic & Engineering Portfolio of Zahidul Hoque (@ZAHIDUL-HOQUE) - Aspiring Ph.D. Researcher in AI, Computer Vision & Autonomous Systems. M.Sc. Data Science & Analytics graduate from University of Hertfordshire, B.Sc. Computer Science from Beijing Institute of Technology.">
   <meta name="keywords"
-    content="Zahidul Hoque, ZAHIDUL-HOQUE, GitHub, Computer Vision, Deep Learning, Prototypical Mask R-CNN, ResNet-50, Data Science, University of Hertfordshire, Python">
+    content="Zahidul Hoque, ZAHIDUL-HOQUE, Computer Vision, Prototypical Mask R-CNN, Deep Metric Learning, Connected and Autonomous Vehicles, CAV, LiDAR, CarDD, University of Hertfordshire, Beijing Institute of Technology, PyTorch">
   <meta name="author" content="Zahidul Hoque">
 
-  <!-- Open Graph / GitHub Social Preview -->
-  <meta property="og:type" content="website">
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="profile">
   <meta property="og:url" content="https://github.com/ZAHIDUL-HOQUE">
-  <meta property="og:title" content="Zahidul Hoque | Data Science & Computer Vision Portfolio">
+  <meta property="og:title" content="Zahidul Hoque (@ZAHIDUL-HOQUE) - AI, Computer Vision & Autonomous Systems">
   <meta property="og:description"
-    content="Explore repositories, deep learning models, and open-source projects by Zahidul Hoque (@ZAHIDUL-HOQUE).">
+    content="Aspiring Ph.D. Researcher in AI, Computer Vision & Autonomous Systems. Prototypical Mask R-CNN, CAV Perception, LiDAR & Deep Metric Learning.">
   <meta property="og:image" content="pixelated pic.jpg">
 
-  <!-- Favicon: GitHub Octocat & Cyber Spark -->
+  <!-- Favicon: GitHub Octocat -->
   <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2358a6ff'><path d='M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z'/></svg>">
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'><path d='M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z'/></svg>">
 
-  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Monospace & Sans-Serif Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark-theme">
-  <!-- Dynamic Ambient Glow Background -->
-  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
-  <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
-  <div class="ambient-glow glow-bottom-center" aria-hidden="true"></div>
-  <div class="grid-overlay" aria-hidden="true"></div>
-
-  <!-- Announcement / GitHub Banner -->
-  <aside class="github-top-bar" id="top-announcement">
-    <div class="container top-bar-content">
-      <span class="status-indicator-dot"></span>
-      <span class="top-bar-text">
-        <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
-          <path
-            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-          </path>
-        </svg>
-        Featured Repository: <strong>Masters Thesis - Vehicle Damage Detection & Segmentation</strong>
-      </span>
-      <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-"
-        target="_blank" rel="noopener noreferrer" class="top-bar-link">
-        View on GitHub &rarr;
-      </a>
-    </div>
-  </aside>
-
-  <!-- Sticky Glassmorphic Header -->
-  <header class="site-header" id="site-header">
-    <div class="container header-container">
-      <a href="#hero" class="brand-identity" id="brand-logo" aria-label="Zahidul Hoque Home">
-        <div class="brand-avatar-mini">
-          <img src="pixelated pic.jpg" alt="Zahidul Hoque avatar" class="avatar-mini-img">
-          <span class="active-badge" title="Active on GitHub"></span>
+<body class="github-theme">
+  <!-- GitHub Global Header -->
+  <header class="gh-header" id="gh-header">
+    <div class="gh-header-container">
+      <div class="gh-header-left">
+        <a href="#overview" class="gh-logo-link gh-tab-trigger" data-target-tab="overview" aria-label="Go to Overview"
+          title="Go to Overview">
+          <img src="pixelated pic.jpg" alt="Zahidul Hoque" class="gh-header-avatar">
+        </a>
+        <div class="gh-header-breadcrumb">
+          <a href="#overview" class="gh-user-link gh-tab-trigger" data-target-tab="overview">ZAHIDUL-HOQUE</a>
+          <span class="gh-separator">/</span>
+          <span class="gh-current-label">Portfolio & Academic Profile</span>
         </div>
-        <div class="brand-text-group">
-          <span class="brand-name">ZAHIDUL HOQUE</span>
-          <span class="brand-sub">@ZAHIDUL-HOQUE</span>
-        </div>
-      </a>
+      </div>
 
-      <!-- Desktop Nav -->
-      <nav class="desktop-nav" aria-label="Primary Navigation">
-        <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active" data-target="hero">Overview</a></li>
-          <li><a href="#github-spotlight" class="nav-link" data-target="github-spotlight">GitHub Hub</a></li>
-          <li><a href="#research" class="nav-link" data-target="research">Thesis & AI</a></li>
-          <li><a href="#repositories" class="nav-link" data-target="repositories">Repositories</a></li>
-          <li><a href="#terminal-section" class="nav-link" data-target="terminal-section">Git CLI</a></li>
-          <li><a href="#skills" class="nav-link" data-target="skills">Stack</a></li>
-          <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header Action Buttons -->
-      <div class="header-actions">
-        <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
-          class="btn btn-github-header" id="header-github-btn" title="Visit Zahidul's GitHub profile">
-          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+      <div class="gh-header-right">
+        <!-- Quick Search Simulation -->
+        <div class="gh-search-box">
+          <svg class="octicon octicon-search" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
             <path
-              d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+              d="m15.7 14.3-3.1-3.1C13.5 9.9 14 8.5 14 7A7 7 0 1 0 7 14c1.5 0 2.9-.5 4.2-1.4l3.1 3.1c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4ZM2 7a5 5 0 1 1 10 0A5 5 0 0 1 2 7Z">
             </path>
           </svg>
-          <span class="btn-text">github.com/ZAHIDUL-HOQUE</span>
-          <span class="star-badge" id="header-total-stars" title="Total Stars">★ 1</span>
-        </a>
+          <input type="text" id="global-search-input" placeholder="Type '/' to search repositories & research..."
+            aria-label="Search repositories and research">
+          <kbd class="gh-shortcut-key">/</kbd>
+        </div>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+
+
+
+
+        <!-- GitHub Profile External Link -->
+        <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer" class="gh-btn gh-btn-sm"
+          title="Visit GitHub profile">
+          <svg class="octicon octicon-star" viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+            <path
+              d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
+            </path>
+          </svg>
+          <span>Star</span>
+          <span class="gh-counter" id="header-stars-badge">1</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Authentic GitHub Underline Profile Tabs Navigation -->
+    <nav class="gh-profile-tabs" aria-label="Profile navigation">
+      <div class="gh-tabs-container">
+        <button class="gh-tab active" data-tab="overview">
+          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path
+              d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.53-.529A3.75 3.75 0 0 1 10.435 10.5h4.066V2.5h-3.495c-.958 0-1.874.453-2.454 1.219a.75.75 0 0 1-1.196 0A3.003 3.003 0 0 0 4.907 2.5H1.5v8h3.758c.99 0 1.942.394 2.645 1.096l-.652-.022Z">
+            </path>
+          </svg>
+          <span>Overview</span>
+        </button>
+
+        <button class="gh-tab" data-tab="research">
+          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path
+              d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.53 9.53a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.75.75 0 0 1 1.06 1.06Z">
+            </path>
+          </svg>
+          <span>Research & Thesis</span>
+          <span class="gh-badge-highlight">New</span>
+        </button>
+
+        <button class="gh-tab" data-tab="repositories">
+          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path
+              d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25Z">
+            </path>
+          </svg>
+          <span>Repositories</span>
+          <span class="gh-counter" id="tab-repos-count">3</span>
+        </button>
+
+        <button class="gh-tab" data-tab="experience">
+          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path
+              d="M0 4.75C0 3.784.784 3 1.75 3h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM4.75 1.5h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z">
+            </path>
+          </svg>
+          <span>Experience & Education</span>
+        </button>
+
+        <button class="gh-tab" data-tab="skills">
+          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path
+              d="M11.28 3.22a.75.75 0 0 0-1.06 1.06l1.22 1.22H6.5a4 4 0 0 0-4 4v3a.75.75 0 0 0 1.5 0v-3a2.5 2.5 0 0 1 2.5-2.5h4.94l-1.22 1.22a.75.75 0 1 0 1.06 1.06l2.5-2.5a.75.75 0 0 0 0-1.06l-2.5-2.5Z">
+            </path>
+          </svg>
+          <span>Skills & Lab Alignment</span>
+        </button>
+
+        <button class="gh-tab" data-tab="terminal">
+          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path
+              d="m4.47 4.22 4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 0 1-1.06-1.06L6.94 8.75 3.41 5.28a.75.75 0 0 1 1.06-1.06ZM8.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5Z">
+            </path>
+          </svg>
+          <span>Terminal CLI</span>
+        </button>
+
+        <button class="gh-tab" data-tab="contact">
+          <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path
+              d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 4.887v7.363c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V4.887l-6.286 4.4a.75.75 0 0 1-.856 0L1.5 4.887Zm.58-1.387 5.92 4.144L13.92 3.5H2.08Z">
+            </path>
+          </svg>
+          <span>Contact</span>
         </button>
       </div>
-    </div>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-drawer" id="mobile-drawer">
-      <ul class="mobile-nav-links">
-        <li><a href="#hero" class="mobile-link">Overview</a></li>
-        <li><a href="#github-spotlight" class="mobile-link">GitHub Hub</a></li>
-        <li><a href="#research" class="mobile-link">Thesis & AI</a></li>
-        <li><a href="#repositories" class="mobile-link">Repositories</a></li>
-        <li><a href="#terminal-section" class="mobile-link">Git CLI</a></li>
-        <li><a href="#skills" class="mobile-link">Tech Stack</a></li>
-        <li><a href="#contact" class="mobile-link">Contact</a></li>
-        <li class="mobile-cta-li">
-          <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
-            class="btn btn-primary btn-block">
-            Open GitHub Profile
-          </a>
-        </li>
-      </ul>
-    </div>
+    </nav>
   </header>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-grid">
-        <!-- Left: Hero Introduction -->
-        <div class="hero-text-content">
-          <div class="hero-status-pill">
-            <span class="pulse-beacon"></span>
-            <span class="pill-text">Open for AI / ML & Software Engineering Roles</span>
-          </div>
-
-          <h1 class="hero-headline">
-            Hi, I'm <span class="gradient-text">Zahidul Hoque</span>
-            <span class="terminal-cursor">_</span>
-          </h1>
-
-          <div class="hero-role-typing">
-            <span class="cli-prompt">$ git role:</span>
-            <span class="typed-text" id="typed-role">MSc Data Science & Analytics Graduate</span>
-          </div>
-
-          <p class="hero-description">
-            Recent <strong>MSc in Data Science and Analytics with Advanced Research</strong> graduate from the
-            <strong>University of Hertfordshire</strong>. In my thesis research, I specialized in
-            <strong>Prototypical Mask R-CNN</strong>, where I experimented with Mask R-CNN with a prototypical head
-            and ResNet-50 as backbone for few-shot instance segmentation and vehicle exterior damage inspection.
-            All open-source code, thesis implementations, and models are published and maintained directly on GitHub.
-          </p>
-
-          <!-- GitHub Quick Stats Strip -->
-          <div class="hero-stats-row">
-            <div class="stat-card">
-              <span class="stat-number" id="hero-stat-repos">3</span>
-              <span class="stat-label">Public Repos</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">6</span>
-              <span class="stat-label">Defect Classes</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">MSc</span>
-              <span class="stat-label">Thesis AI Project</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">UK</span>
-              <span class="stat-label">United Kingdom</span>
-            </div>
-          </div>
-
-          <!-- Hero Action CTAs -->
-          <div class="hero-cta-group">
-            <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
-              class="btn btn-primary btn-glow" id="cta-github-primary">
-              <svg class="octicon" viewBox="0 0 16 16" width="18" height="18" fill="currentColor">
-                <path
-                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-                </path>
-              </svg>
-              <span>Explore GitHub Profile</span>
-            </a>
-
-            <a href="#research" class="btn btn-secondary" id="cta-thesis">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
-              <span>View Thesis Project</span>
-            </a>
-
-            <button class="btn btn-outline" id="btn-quick-clone-hero"
-              data-repo="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-.git"
-              title="Copy git clone command">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span>git clone thesis</span>
-            </button>
+  <!-- Main GitHub Layout: 2 Columns (Profile Sidebar + Main Content Area) -->
+  <div class="gh-page-container">
+    <!-- LEFT SIDEBAR: Authentic GitHub User Profile -->
+    <aside class="gh-sidebar" id="profile-sidebar">
+      <div class="gh-sidebar-inner">
+        <!-- Avatar Wrapper with Status Pill -->
+        <div class="gh-avatar-wrapper">
+          <img src="pixelated pic.jpg" alt="Zahidul Hoque" class="gh-profile-avatar" id="profile-avatar">
+          <div class="gh-status-badge gh-status-highlighted" title="Status: Seeking Ph.D. / Research Roles">
+            <span class="gh-status-beacon" aria-hidden="true">
+              <span class="gh-beacon-ping"></span>
+              <span class="gh-beacon-dot"></span>
+            </span>
+            <span class="gh-status-emoji">🎯</span>
+            <span class="gh-status-text">Seeking Ph.D. / Research Roles</span>
           </div>
         </div>
 
-        <!-- Right: Glassmorphic Interactive GitHub Profile Card -->
-        <div class="hero-profile-container">
-          <div class="github-profile-card" id="interactive-card">
-            <!-- Window Topbar -->
-            <div class="card-window-bar">
-              <div class="window-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <div class="window-title">
-                <svg class="octicon-small" viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
-                  <path
-                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-                  </path>
-                </svg>
-                <span>github.com/ZAHIDUL-HOQUE</span>
-              </div>
-              <div class="window-action">
-                <span class="tag-status">ONLINE</span>
-              </div>
-            </div>
-
-            <!-- Profile Body -->
-            <div class="card-inner-content">
-              <div class="card-avatar-wrapper">
-                <img src="pixelated pic.jpg" alt="Zahidul Hoque" class="card-avatar-img" id="hero-avatar">
-                <div class="avatar-hover-lens">
-                  <span>Pixel Art Edition</span>
-                </div>
-              </div>
-
-              <div class="card-bio-section">
-                <div class="card-name-row">
-                  <h2 class="card-real-name">ZAHIDUL HOQUE</h2>
-                  <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
-                    class="verified-github-badge" title="Verified GitHub Account">
-                    <svg viewBox="0 0 16 16" width="14" height="14" fill="#388bfd">
-                      <path
-                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-                      </path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card-handle">@ZAHIDUL-HOQUE</div>
-
-                <p class="card-quote">
-                  "MSc Data Science & Analytics graduate passionate about Computer Vision, specializing in Prototypical
-                  Mask R-CNN and ResNet-50 architectures."
-                </p>
-
-                <!-- Metadata List -->
-                <ul class="card-meta-list">
-                  <li>
-                    <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
-                      <path
-                        d="M1.5 14.25c0 .414.336.75.75.75h11.5a.75.75 0 0 0 0-1.5H2.25a.75.75 0 0 0-.75.75Zm2-11.75c0-.414.336-.75.75-.75h7.5c.414 0 .75.336.75.75v10h-9V2.5Zm1.5.75v8.5h6V3.25H5Z">
-                      </path>
-                    </svg>
-                    <span>University of Hertfordshire</span>
-                  </li>
-                  <li>
-                    <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
-                      <path
-                        d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192 0ZM8 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z">
-                      </path>
-                    </svg>
-                    <span>United Kingdom</span>
-                  </li>
-
-                </ul>
-
-                <!-- Live Quick Stats Badges -->
-                <div class="card-repo-summary">
-                  <div class="summary-badge">
-                    <span class="badge-value">Python</span>
-                    <span class="badge-desc">Primary Stack</span>
-                  </div>
-                  <div class="summary-badge">
-                    <span class="badge-value">Mask R-CNN</span>
-                    <span class="badge-desc">Architecture</span>
-                  </div>
-                  <div class="summary-badge">
-                    <span class="badge-value">DETR-FSOD</span>
-                    <span class="badge-desc">Vision Pipeline</span>
-                  </div>
-                </div>
-
-                <!-- Direct GitHub & Social Actions -->
-                <div class="card-action-bar">
-                  <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-github-follow btn-block">
-                    <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
-                      <path
-                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-                      </path>
-                    </svg>
-                    @ZAHIDUL-HOQUE on GitHub
-                  </a>
-
-                  <!-- LinkedIn & One-Click Copy Email -->
-                  <div class="card-sub-actions">
-                    <a href="https://www.linkedin.com/in/zahidul-hoque" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-linkedin" id="card-linkedin-btn" title="Connect on LinkedIn">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                        <path
-                          d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22m1.4 9.74v-8.37H5.06v8.37h2.8Z">
-                        </path>
-                      </svg>
-                      <span>LinkedIn</span>
-                    </a>
-
-                    <button type="button" class="btn btn-copy-email" id="card-copy-email-btn"
-                      title="Copy zahidulhoqueomy@gmail.com" data-email="zahidulhoqueomy@gmail.com">
-                      <svg class="email-icon-svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                      </svg>
-                      <span class="btn-email-text">Copy Email</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Name & Handle -->
+        <div class="gh-user-names">
+          <h1 class="gh-full-name">ZAHIDUL HOQUE</h1>
+          <div class="gh-username-row">
+            <span class="gh-username">ZAHIDUL-HOQUE</span>
+            <span class="gh-pronouns">he/him</span>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- GITHUB SPOTLIGHT & CONTRIBUTION ENGINE SECTION -->
-    <section class="github-spotlight-section" id="github-spotlight">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">
-            <svg class="octicon" viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+        <!-- Bio from CV -->
+        <div class="gh-user-bio">
+          Aspiring Ph.D. Researcher in <strong>AI, Computer Vision & Autonomous Systems</strong>. MSc in Data Science &
+          Analytics (Advanced Research) from University of Hertfordshire.
+        </div>
+
+        <!-- Primary Actions -->
+        <div class="gh-profile-actions">
+
+          <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
+            class="gh-btn gh-btn-block gh-btn-primary">
+            Follow on GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/zahidul--hoque" target="_blank" rel="noopener noreferrer"
+            class="gh-btn gh-btn-block gh-btn-linkedin">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+              <path
+                d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.46 6.46H4.25v6.54h2.21ZM5.355 3.32a1.28 1.28 0 1 0 0 2.56 1.28 1.28 0 0 0 0-2.56ZM13 8.76c0-2.07-.98-3.03-2.47-3.03-1.2 0-1.74.66-2.04 1.12V6.46H6.28c.03.62 0 6.54 0 6.54h2.21V9.34c0-.2.01-.4.07-.55.16-.4.53-.82 1.15-.82.81 0 1.14.62 1.14 1.53v3.5H13Z">
+              </path>
+            </svg>
+            Connect with me in LinkedIn
+          </a>
+
+          <button type="button" class="gh-btn gh-btn-block copy-btn" data-clipboard="zahidulhoqueomy@gmail.com"
+            id="sidebar-copy-email-btn">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+              <path
+                d="M0 4.75C0 3.784.784 3 1.75 3h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25ZM1.5 4.887v7.363c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V4.887l-6.286 4.4a.75.75 0 0 1-.856 0L1.5 4.887Zm.58-1.387 5.92 4.144L13.92 3.5H2.08Z">
+              </path>
+            </svg>
+            <span>Copy Email</span>
+          </button>
+        </div>
+
+        <!-- Verified Metadata Details from CV -->
+        <ul class="gh-meta-list">
+          <li class="gh-meta-item">
+            <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path
+                d="M1.5 14.25c0 .414.336.75.75.75h11.5a.75.75 0 0 0 0-1.5H2.25a.75.75 0 0 0-.75.75Zm2-11.75c0-.414.336-.75.75-.75h7.5c.414 0 .75.336.75.75v10h-9V2.5Zm1.5.75v8.5h6V3.25H5Z">
+              </path>
+            </svg>
+            <span>University of Hertfordshire</span>
+          </li>
+          <li class="gh-meta-item">
+            <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path
+                d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192 0ZM8 9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z">
+              </path>
+            </svg>
+            <span>Ilford, London, United Kingdom</span>
+          </li>
+          <li class="gh-meta-item">
+            <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path
+                d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 4.887v7.363c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V4.887l-6.286 4.4a.75.75 0 0 1-.856 0L1.5 4.887Zm.58-1.387 5.92 4.144L13.92 3.5H2.08Z">
+              </path>
+            </svg>
+            <a href="mailto:zahidulhoqueomy@gmail.com" class="gh-link">zahidulhoqueomy@gmail.com</a>
+          </li>
+          <li class="gh-meta-item">
+            <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path
+                d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 4.887v7.363c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V4.887l-6.286 4.4a.75.75 0 0 1-.856 0L1.5 4.887Zm.58-1.387 5.92 4.144L13.92 3.5H2.08Z">
+              </path>
+            </svg>
+            <a href="mailto:zh24abg@herts.ac.uk" class="gh-link">zh24abg@herts.ac.uk</a>
+          </li>
+          <li class="gh-meta-item">
+            <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path
+                d="M3.75 0a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 14.25V1.75A1.75 1.75 0 0 0 12.25 0Zm-.25 1.75a.25.25 0 0 1 .25-.25h8.5a.25.25 0 0 1 .25.25v10.5H3.5ZM8 13.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z">
+              </path>
+            </svg>
+            <span>+44 7405 698652</span>
+          </li>
+          <li class="gh-meta-item">
+            <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path
+                d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a3.5 3.5 0 0 0 4.95 0l1.25-1.25a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-1.25 1.25a2 2 0 0 1-2.83-2.83l2.5-2.5a2 2 0 0 1 2.83 0 .751.751 0 0 0 1.042-.018.751.751 0 0 0 .018-1.042 3.5 3.5 0 0 0-4.95 0l-2.5 2.5a3.5 3.5 0 0 0 0 4.95Z">
+              </path>
+            </svg>
+            <a href="https://www.linkedin.com/in/zahidul--hoque" target="_blank" rel="noopener noreferrer"
+              class="gh-link">linkedin.com/in/zahidul--hoque</a>
+          </li>
+          <li class="gh-meta-item">
+            <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
               <path
                 d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
               </path>
             </svg>
-            GitHub Activity & Metrics
-          </div>
-          <h2 class="section-title">GitHub-Driven Development Ecosystem</h2>
-          <p class="section-subtitle">
-            Real-time insights from
             <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
-              class="link-underlined">@ZAHIDUL-HOQUE</a>:
-            repositories, commit timelines, and active open-source projects.
-          </p>
+              class="gh-link">github.com/ZAHIDUL-HOQUE</a>
+          </li>
+        </ul>
+
+        <!-- Achievements Badges Strip -->
+        <div class="gh-sidebar-divider"></div>
+        <div class="gh-section-title-sm">Achievements & Credentials</div>
+        <div class="gh-badges-flow">
+          <span class="gh-badge" title="MSc with Advanced Research from University of Hertfordshire">🎓 MSc Adv.
+            Research</span>
+          <span class="gh-badge" title="B.Sc. in Computer Science from Beijing Institute of Technology">🏛️ BIT CS
+            Alum</span>
+          <span class="gh-badge" title="Vehicle Damage Instance Segmentation with Prototypical Mask R-CNN">🚗 CarDD
+            Research</span>
+          <span class="gh-badge" title="PyTorch & CUDA Mixed Precision Deep Learning">⚡ PyTorch / CUDA</span>
+          <span class="gh-badge" title="Connected & Autonomous Vehicles (CAV) Perception">🛰️ CAV & LiDAR</span>
         </div>
 
-        <!-- Activity Heatmap Container -->
-        <div class="heatmap-card">
-          <div class="heatmap-header">
-            <div class="heatmap-title-group">
-              <span class="heatmap-title">Contribution Heatmap & Commit Frequency</span>
-              <span class="heatmap-sub">Live repository push history and active development cycles</span>
-            </div>
-            <div class="heatmap-stats">
-              <div class="heatmap-stat-item">
-                <span class="stat-highlight" id="contribution-count">100+</span>
-                <span class="stat-caption">Contributions</span>
-              </div>
-              <div class="heatmap-stat-item">
-                <span class="stat-highlight">100%</span>
-                <span class="stat-caption">Open Source</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Heatmap Grid Canvas -->
-          <div class="heatmap-scroll-container">
-            <div class="heatmap-grid" id="github-heatmap-grid" role="region" aria-label="GitHub contribution calendar">
-              <!-- Dynamically rendered weeks and day cells -->
-            </div>
-          </div>
-
-          <!-- Heatmap Legend & Tooltip Anchor -->
-          <div class="heatmap-footer">
-            <span class="legend-text">Less</span>
-            <div class="legend-scale">
-              <span class="legend-box level-0" title="0 commits"></span>
-              <span class="legend-box level-1" title="1-2 commits"></span>
-              <span class="legend-box level-2" title="3-5 commits"></span>
-              <span class="legend-box level-3" title="6-8 commits"></span>
-              <span class="legend-box level-4" title="9+ commits"></span>
-            </div>
-            <span class="legend-text">More</span>
-            <div class="heatmap-sync-status" id="heatmap-sync-label">
-              <span class="sync-dot"></span> Synced with GitHub API
-            </div>
-          </div>
-        </div>
-
-        <!-- GitHub Live Profile Metrics Grid -->
-        <div class="github-metrics-grid">
-          <div class="metric-glass-box">
-            <div class="metric-icon code-icon">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-            </div>
-            <div class="metric-content">
-              <span class="metric-label">Primary Programming Language</span>
-              <span class="metric-val">Python 3.10+</span>
-              <span class="metric-detail">PyTorch, TorchVision, Streamlit</span>
-            </div>
-          </div>
-
-          <div class="metric-glass-box">
-            <div class="metric-icon star-icon">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
-                </path>
-              </svg>
-            </div>
-            <div class="metric-content">
-              <span class="metric-label">Featured Starred Project</span>
-              <span class="metric-val">MSc Prototypical Mask R-CNN</span>
-              <span class="metric-detail">Vehicle Damage Instance Segmentation</span>
-            </div>
-          </div>
-
-          <div class="metric-glass-box">
-            <div class="metric-icon git-branch-icon">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="6" y1="3" x2="6" y2="15"></line>
-                <circle cx="18" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M18 9a9 9 0 0 1-9 9"></path>
-              </svg>
-            </div>
-            <div class="metric-content">
-              <span class="metric-label">Model Pipeline</span>
-              <span class="metric-val">DETR & FSOD Pipelines</span>
-              <span class="metric-detail">Two-model vehicle damage detector</span>
-            </div>
-          </div>
+        <!-- Academic Supervisor Reference -->
+        <div class="gh-sidebar-divider"></div>
+        <div class="gh-section-title-sm">Academic Supervisor</div>
+        <div class="gh-reference-mini">
+          <div class="ref-name">Dr. Joseph Reddington</div>
+          <div class="ref-title">Senior Lecturer / Academic Supervisor</div>
+          <div class="ref-dept">School of Physics, Engineering and Computer Science</div>
+          <div class="ref-inst">University of Hertfordshire, Hatfield, UK</div>
+          <a href="https://researchprofiles.herts.ac.uk" target="_blank" rel="noopener noreferrer"
+            class="gh-link ref-link">researchprofiles.herts.ac.uk &rarr;</a>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <!-- RESEARCH & AI SHOWCASE (MASTER'S THESIS SPOTLIGHT) -->
-    <section class="research-section" id="research">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag research-tag">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 17 12 22 22 17"></polyline>
-              <polyline points="2 12 12 17 22 12"></polyline>
-            </svg>
-            University of Hertfordshire MSc Project
+    <!-- RIGHT MAIN CONTENT AREA -->
+    <main class="gh-main-content">
+
+      <!-- ==========================================
+           TAB 1: OVERVIEW (README + Pinned Repos + Calendar)
+           ========================================== -->
+      <section class="tab-pane active" id="pane-overview">
+        <!-- Authentic GitHub Profile README.md Box -->
+        <div class="gh-box gh-readme-box">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.53-.529A3.75 3.75 0 0 1 10.435 10.5h4.066V2.5h-3.495c-.958 0-1.874.453-2.454 1.219a.75.75 0 0 1-1.196 0A3.003 3.003 0 0 0 4.907 2.5H1.5v8h3.758c.99 0 1.942.394 2.645 1.096l-.652-.022Z">
+                </path>
+              </svg>
+              <span>ZAHIDUL-HOQUE / README.md</span>
+            </div>
+            <div class="gh-box-actions">
+              <span class="gh-tag-pill gh-tag-highlighted" title="Status: Seeking Ph.D. / Research Roles">
+                <span class="gh-beacon-dot-sm"></span> Seeking Ph.D. / Research Roles
+              </span>
+              <span class="gh-tag-pill">Academic Profile</span>
+            </div>
           </div>
-          <h2 class="section-title">Vehicle Exterior Damage Detection System</h2>
-          <p class="section-subtitle">
-            An end-to-end computer vision and inspection grading application powered by
-            <strong>Prototypical Mask R-CNN</strong> (Mask R-CNN with a prototypical head & ResNet-50 backbone) trained
-            on the <strong>CarDD dataset</strong>.
-          </p>
+
+          <div class="gh-box-body markdown-body">
+            <h2>Hi, I'm Zahidul Hoque 👋</h2>
+            <p class="lead-bio">
+              <strong>Aspiring Ph.D. Researcher in AI, Computer Vision & Autonomous Systems</strong> based in Ilford,
+              London, UK.
+              Recently completed <strong>M.Sc. in Data Science and Analytics with Advanced Research</strong> at the
+              <strong>University of Hertfordshire</strong>, following a <strong>B.Sc. in Computer Science</strong> from
+              <strong>Beijing Institute of Technology (BIT)</strong>.
+            </p>
+
+            <div class="gh-callout">
+              <div class="callout-icon">💡</div>
+              <div class="callout-text">
+                <strong>Core Research Focus:</strong> Investigating few-shot object detection and metric learning to
+                solve extreme class imbalance, sensor fusion (LiDAR & Camera), and Sim2Real digital-twin domain shifts
+                for Connected and Autonomous Vehicles (CAV) and Vulnerable Road User (VRU) safety.
+              </div>
+            </div>
+
+            <h3>🔬 Research Domains & Interests</h3>
+            <div class="research-pills-grid">
+              <div class="res-pill">
+                <span class="pill-dot blue-dot"></span>
+                <strong>Computer Vision & Deep Learning</strong>
+              </div>
+              <div class="res-pill">
+                <span class="pill-dot green-dot"></span>
+                <strong>Connected & Autonomous Vehicles (CAV)</strong>
+              </div>
+              <div class="res-pill">
+                <span class="pill-dot purple-dot"></span>
+                <strong>LiDAR & Multimodal Sensor Perception</strong>
+              </div>
+              <div class="res-pill">
+                <span class="pill-dot yellow-dot"></span>
+                <strong>Deep Metric Learning & Latent Spaces</strong>
+              </div>
+              <div class="res-pill">
+                <span class="pill-dot cyan-dot"></span>
+                <strong>Digital Twins & Sim2Real Perception</strong>
+              </div>
+              <div class="res-pill">
+                <span class="pill-dot orange-dot"></span>
+                <strong>Vision-Language-Action (VLA) Models</strong>
+              </div>
+              <div class="res-pill">
+                <span class="pill-dot red-dot"></span>
+                <strong>Traffic Safety & VRU Protection</strong>
+              </div>
+              <div class="res-pill">
+                <span class="pill-dot teal-dot"></span>
+                <strong>Long-Tailed & Class-Imbalanced Learning</strong>
+              </div>
+            </div>
+
+            <h3>🎓 Key Academic Highlights</h3>
+            <ul>
+              <li>
+                <strong>Master's Final Research Project (7COM1039):</strong> Formulated a hybrid instance segmentation
+                architecture integrating <strong>Mask R-CNN with Deep Metric Learning</strong> (replacing standard
+                parametric linear classification with a Squared Euclidean Prototypical Predictor head). Evaluated on the
+                CarDD benchmark, achieving <strong>mAP 0.319 (IoU 0.50:0.95)</strong>, <strong>AP@50 0.630</strong>, and
+                <strong>AR 0.436</strong> across 810 test images.
+              </li>
+              <li>
+                <strong>Mathematical Foundation:</strong> Enforced strict $L_2$ normalisation on 1024-D RoI embeddings
+                and class prototypes, proving empirical pairwise distance $1.91 \le d^2 \le 2.09$ ($\theta \approx
+                90^\circ$), confirming convergence to an orthogonal latent feature space.
+              </li>
+              <li>
+                <strong>Undergraduate Foundation:</strong> 4-year Computer Science degree at Beijing Institute of
+                Technology (BIT) covering Data Structures & Algorithms, Multivariable Calculus, Linear Algebra,
+                Probability & Statistics, and Operating Systems.
+              </li>
+            </ul>
+
+
+          </div>
         </div>
 
-        <!-- Flagship Research Showcase Card -->
-        <div class="thesis-card">
-          <div class="thesis-header-row">
-            <div class="thesis-title-area">
-              <div class="repo-badge-strip">
-                <span class="repo-type-tag">Public Repository</span>
-                <span class="repo-lang-tag"><span class="lang-color python-color"></span>Python</span>
-                <span class="repo-license-tag">Apache 2.0</span>
-                <span class="repo-academic-tag">MSc Advanced Research Project</span>
-              </div>
-              <h3 class="thesis-name">
-                <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-"
-                  target="_blank" rel="noopener noreferrer">
-                  Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire
-                </a>
-              </h3>
-              <p class="thesis-desc">
-                Automated detection, pixel-level instance segmentation, and inspection grading for six critical exterior
-                vehicle damages. Experimented with Mask R-CNN incorporating a prototypical head and ResNet-50 as
-                backbone on the CarDD dataset,
-                equipped with an interactive Streamlit web dashboard, confidence filtering, and non-maximum suppression
-                (NMS) overlap tuning.
-              </p>
-            </div>
+        <!-- Pinned Repositories Section -->
+        <div class="gh-section-header">
+          <div class="gh-section-title">Pinned Repositories</div>
+          <a href="#repositories" class="gh-link gh-tab-trigger" data-target-tab="repositories">View all repositories
+            &rarr;</a>
+        </div>
 
-            <div class="thesis-quick-actions">
+        <div class="gh-pinned-grid">
+          <!-- Pinned 1: Master's Thesis -->
+          <article class="gh-pinned-card">
+            <div class="pinned-card-header">
+              <svg class="octicon octicon-repo" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25Z">
+                </path>
+              </svg>
               <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-"
-                target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                target="_blank" rel="noopener noreferrer" class="pinned-repo-name">
+                Masters-thesis-project-Prototypical-Mask-R-CNN
+              </a>
+              <span class="gh-visibility-pill">Public</span>
+            </div>
+            <p class="pinned-card-desc">
+              Prototypical Mask R-CNN for Vehicle Exterior Damage Detection. Hybrid instance segmentation combining Deep
+              Metric Learning, Squared Euclidean Prototypical head & ResNet-50-FPN backbone on CarDD benchmark.
+            </p>
+            <div class="pinned-card-footer">
+              <span class="repo-lang"><span class="lang-color python-color"></span>Python</span>
+              <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-/stargazers"
+                class="repo-meta-stat" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
                   <path
-                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
                   </path>
                 </svg>
-                <span>GitHub Repository</span>
+                <span>1</span>
               </a>
-              <button class="btn btn-secondary copy-btn"
-                data-clipboard="git clone https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-.git">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                </svg>
-                <span>Copy Clone URL</span>
+              <button class="gh-btn-icon copy-btn"
+                data-clipboard="git clone https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-.git"
+                title="Copy git clone URL">
+                clone
               </button>
             </div>
-          </div>
+          </article>
 
-          <!-- 6 Defect Categories Interactive Strip -->
-          <div class="defect-categories-box">
-            <h4 class="defect-title">Detected Vehicle Exterior Damage Classes & Color Taxonomy:</h4>
-            <div class="defect-tags-grid">
-              <div class="defect-chip" style="--chip-color: #FF7A00;" data-defect="dent">
-                <span class="chip-color-dot" style="background-color: #FF7A00;"></span>
-                <span class="chip-name">Dent</span>
-                <span class="chip-hex">#FF7A00</span>
-              </div>
-              <div class="defect-chip" style="--chip-color: #00D2FF;" data-defect="scratch">
-                <span class="chip-color-dot" style="background-color: #00D2FF;"></span>
-                <span class="chip-name">Scratch</span>
-                <span class="chip-hex">#00D2FF</span>
-              </div>
-              <div class="defect-chip" style="--chip-color: #A855F7;" data-defect="crack">
-                <span class="chip-color-dot" style="background-color: #A855F7;"></span>
-                <span class="chip-name">Crack</span>
-                <span class="chip-hex">#A855F7</span>
-              </div>
-              <div class="defect-chip" style="--chip-color: #FF2A6D;" data-defect="glass">
-                <span class="chip-color-dot" style="background-color: #FF2A6D;"></span>
-                <span class="chip-name">Glass Shatter</span>
-                <span class="chip-hex">#FF2A6D</span>
-              </div>
-              <div class="defect-chip" style="--chip-color: #FACC15;" data-defect="lamp">
-                <span class="chip-color-dot" style="background-color: #FACC15;"></span>
-                <span class="chip-name">Lamp Broken</span>
-                <span class="chip-hex">#FACC15</span>
-              </div>
-              <div class="defect-chip" style="--chip-color: #10B981;" data-defect="tire">
-                <span class="chip-color-dot" style="background-color: #10B981;"></span>
-                <span class="chip-name">Tire Flat</span>
-                <span class="chip-hex">#10B981</span>
-              </div>
+          <!-- Pinned 2: DETR FSOD -->
+          <article class="gh-pinned-card">
+            <div class="pinned-card-header">
+              <svg class="octicon octicon-repo" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25Z">
+                </path>
+              </svg>
+              <a href="https://github.com/ZAHIDUL-HOQUE/DETR-FSOD-vehicle-damage-detection_two-model-pipeline"
+                target="_blank" rel="noopener noreferrer" class="pinned-repo-name">
+                DETR-FSOD-vehicle-damage-detection
+              </a>
+              <span class="gh-visibility-pill">Public</span>
+            </div>
+            <p class="pinned-card-desc">
+              Two-model object detection and segmentation pipeline integrating Detection Transformers (DETR) and
+              Few-Shot Object Detection (FSOD) pipelines for localized exterior vehicle anomalies.
+            </p>
+            <div class="pinned-card-footer">
+              <span class="repo-lang"><span class="lang-color python-color"></span>Python</span>
+              <span class="repo-meta-stat">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+                  <path
+                    d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 0-1.5 0v.128h-3v-.128a2.25 2.25 0 1 0-1.5 0ZM3.75 2.5a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0Zm7 0a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0ZM8 9a.75.75 0 0 1 .75.75v1.878a2.25 2.25 0 1 1-1.5 0V9.75A.75.75 0 0 1 8 9Zm0 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z">
+                  </path>
+                </svg>
+                <span>0</span>
+              </span>
+              <button class="gh-btn-icon copy-btn"
+                data-clipboard="git clone https://github.com/ZAHIDUL-HOQUE/DETR-FSOD-vehicle-damage-detection_two-model-pipeline.git"
+                title="Copy git clone URL">
+                clone
+              </button>
+            </div>
+          </article>
+
+          <!-- Pinned 3: Portfolio Website -->
+          <article class="gh-pinned-card">
+            <div class="pinned-card-header">
+              <svg class="octicon octicon-repo" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25Z">
+                </path>
+              </svg>
+              <a href="https://github.com/ZAHIDUL-HOQUE/portfolio-website-for-Shuvo-Sultan" target="_blank"
+                rel="noopener noreferrer" class="pinned-repo-name">
+                portfolio-website-for-Shuvo-Sultan
+              </a>
+              <span class="gh-visibility-pill">Public</span>
+            </div>
+            <p class="pinned-card-desc">
+              Clean personal portfolio website developed with modern responsive web standards, semantic HTML structure,
+              and Vanilla CSS styles.
+            </p>
+            <div class="pinned-card-footer">
+              <span class="repo-lang"><span class="lang-color html-color"></span>HTML</span>
+              <span class="repo-meta-stat">MIT License</span>
+              <button class="gh-btn-icon copy-btn"
+                data-clipboard="git clone https://github.com/ZAHIDUL-HOQUE/portfolio-website-for-Shuvo-Sultan.git"
+                title="Copy git clone URL">
+                clone
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <!-- ==========================================
+           TAB 2: RESEARCH & THESIS (Master's Project & Interactive CarDD Demo)
+           ========================================== -->
+      <section class="tab-pane" id="pane-research">
+        <div class="gh-box">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.53 9.53a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.75.75 0 0 1 1.06 1.06Z">
+                </path>
+              </svg>
+              <span>Master's Research & Technical Contributions (7COM1039)</span>
+            </div>
+            <div class="gh-box-actions">
+              <span class="gh-tag-pill">Sep 2024 – 2025</span>
+
+              <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-"
+                target="_blank" rel="noopener noreferrer" class="gh-btn gh-btn-sm">
+                View Codebase on GitHub &rarr;
+              </a>
             </div>
           </div>
 
-          <!-- Interactive Simulator / KPI Demonstration -->
-          <div class="simulator-wrapper">
-            <div class="simulator-header">
-              <span class="simulator-badge">THESIS DASHBOARD DEMO</span>
-              <span class="simulator-instruction">Click damage tags to simulate computer vision defect inference:</span>
+          <div class="gh-box-body markdown-body">
+            <h2>Prototypical Mask R-CNN for Vehicle Exterior Damage Detection</h2>
+            <p class="thesis-institution-line">
+              <strong>University of Hertfordshire</strong> &bull; Supervisor: <strong>Dr. Joseph Reddington</strong>
+              &bull; Academic Module: <strong>7COM1039 (Advanced Research Project)</strong>
+            </p>
+
+            <div class="paper-summary-card">
+              <div class="paper-spec-row">
+                <div class="paper-spec">
+                  <span class="spec-label">Architecture</span>
+                  <span class="spec-value">Prototypical Mask R-CNN</span>
+                </div>
+                <div class="paper-spec">
+                  <span class="spec-label">Backbone</span>
+                  <span class="spec-value">ResNet-50-FPN</span>
+                </div>
+                <div class="paper-spec">
+                  <span class="spec-label">Benchmark</span>
+                  <span class="spec-value">CarDD (810 Test Images)</span>
+                </div>
+                <div class="paper-spec">
+                  <span class="spec-label">Overall mAP</span>
+                  <span class="spec-value text-green">0.319 (IoU 0.50:0.95)</span>
+                </div>
+                <div class="paper-spec">
+                  <span class="spec-label">AP@50</span>
+                  <span class="spec-value text-green">0.630</span>
+                </div>
+                <div class="paper-spec">
+                  <span class="spec-label">Average Recall (AR)</span>
+                  <span class="spec-value text-green">0.436</span>
+                </div>
+              </div>
             </div>
 
-            <div class="simulator-body">
+            <h3>Core Architectural & Scientific Contributions</h3>
+            <div class="contributions-grid">
+              <div class="contrib-card">
+                <h4>1. Novel Hybrid Deep Learning Architecture</h4>
+                <p>
+                  Engineered and implemented an end-to-end instance segmentation network integrating Mask R-CNN with
+                  <strong>Deep Metric Learning</strong>, replacing the standard parametric linear classification layer
+                  with a <strong>Squared Euclidean Prototypical Predictor head</strong>.
+                </p>
+              </div>
+
+              <div class="contrib-card">
+                <h4>2. Tackling Extreme Class Imbalance</h4>
+                <p>
+                  Formulated a geometric centroid-learning framework to resolve the severe long-tail distribution and
+                  gradient dominance inherent in vehicle exterior inspection datasets (CarDD benchmark), eliminating
+                  minority class collapse (e.g. flat tires, shattered glass).
+                </p>
+              </div>
+
+              <div class="contrib-card">
+                <h4>3. Hyperspherical Latent Geometry</h4>
+                <p>
+                  Enforced strict $L_2$ normalisation on both 1024-D RoI feature embeddings and learnable class
+                  prototypes, projecting representations onto a unit hypersphere ($\|p\| = 1$).
+                  Mathematically derived that pairwise squared Euclidean distance:
+                </p>
+                <div class="math-block">
+                  $$d^2 = 2 - 2\cos(\theta)$$
+                  $$\text{Empirical values: } 1.91 \le d^2 \le 2.09 \quad (\theta \approx 90^\circ)$$
+                </div>
+                <p class="math-caption">
+                  Proved mathematically and empirically that the model converged to an orthogonal feature space that
+                  effectively eliminates inter-class visual confusion.
+                </p>
+              </div>
+
+              <div class="contrib-card">
+                <h4>4. Optimization & Mixed-Precision Protocol</h4>
+                <p>
+                  Leveraged a ResNet-50-FPN backbone pre-trained on MS-COCO, configured with temperature-scaled softmax
+                  ($\alpha = 20$) for rapid monotonic loss convergence, SGD with momentum, and learning rate
+                  step-decay. Utilised Automatic Mixed Precision (<code>torch.cuda.amp</code>) to maximize memory
+                  efficiency on an NVIDIA RTX 3060 (12GB).
+                </p>
+              </div>
+
+              <div class="contrib-card">
+                <h4>5. Data Augmentation & Spatial Fidelity</h4>
+                <p>
+                  Engineered synchronized spatial transformations (<code>torchvision.transforms</code>) dynamically
+                  mirroring binary segmentation masks and bounding box coordinates during horizontal flips to maintain
+                  pixel-level spatial fidelity under varying sensor orientations.
+                </p>
+              </div>
+
+              <div class="contrib-card">
+                <h4>6. Future Vision-Language-Action (VLA) Roadmap</h4>
+                <p>
+                  Proposed extending metric damage embeddings into the latent space of Multimodal Large Language Models
+                  (MLLMs) and VLA frameworks for automated, explainable vehicle safety diagnostics in autonomous
+                  mobility ecosystems.
+                </p>
+              </div>
+            </div>
+
+            <!-- Empirical Results Table -->
+            <h3>📊 Empirical Evaluation on CarDD Benchmark</h3>
+            <div class="table-responsive">
+              <table class="gh-table">
+                <thead>
+                  <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                    <th>IoU Threshold / Protocol</th>
+                    <th>Significance / Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Mean Average Precision (mAP)</strong></td>
+                    <td><span class="tag-metric">0.319</span></td>
+                    <td>IoU 0.50 : 0.95 (COCO standard)</td>
+                    <td>Strong instance segmentation across highly irregular damage shapes</td>
+                  </tr>
+                  <tr>
+                    <td><strong>AP@50</strong></td>
+                    <td><span class="tag-metric">0.630</span></td>
+                    <td>IoU 0.50</td>
+                    <td>Accurate localization and region proposals</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Average Recall (AR)</strong></td>
+                    <td><span class="tag-metric">0.436</span></td>
+                    <td>100 detections max</td>
+                    <td>Robust retrieval of rare & long-tail minority defects</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Evaluation Dataset</strong></td>
+                    <td>810 test images</td>
+                    <td>CarDD Benchmark</td>
+                    <td>Extreme real-world exterior inspection conditions</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Prototypes Geometry</strong></td>
+                    <td>$1.91 \le d^2 \le 2.09$</td>
+                    <td>Unit Hypersphere ($\|p\| = 1$)</td>
+                    <td>Orthogonal class separation ($\theta \approx 90^\circ$)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Interactive CarDD Defect Simulator -->
+            <h3>🚗 Interactive CarDD Defect Simulator & Inspection Telemetry</h3>
+            <p class="section-desc-sm">
+              Click the defect taxonomy chips below to simulate the Prototypical Mask R-CNN inference pipeline across
+              the
+              6 CarDD damage categories:
+            </p>
+
+            <div class="gh-defect-chips-row">
+              <button class="defect-btn active" data-defect="dent" style="--d-color: #FF7A00;">
+                <span class="d-dot" style="background:#FF7A00;"></span>
+                <span>Dent</span>
+                <span class="d-code">#FF7A00</span>
+              </button>
+              <button class="defect-btn" data-defect="scratch" style="--d-color: #00D2FF;">
+                <span class="d-dot" style="background:#00D2FF;"></span>
+                <span>Scratch</span>
+                <span class="d-code">#00D2FF</span>
+              </button>
+              <button class="defect-btn" data-defect="crack" style="--d-color: #A855F7;">
+                <span class="d-dot" style="background:#A855F7;"></span>
+                <span>Crack</span>
+                <span class="d-code">#A855F7</span>
+              </button>
+              <button class="defect-btn" data-defect="glass" style="--d-color: #FF2A6D;">
+                <span class="d-dot" style="background:#FF2A6D;"></span>
+                <span>Glass Shatter</span>
+                <span class="d-code">#FF2A6D</span>
+              </button>
+              <button class="defect-btn" data-defect="lamp" style="--d-color: #FACC15;">
+                <span class="d-dot" style="background:#FACC15;"></span>
+                <span>Lamp Broken</span>
+                <span class="d-code">#FACC15</span>
+              </button>
+              <button class="defect-btn" data-defect="tire" style="--d-color: #10B981;">
+                <span class="d-dot" style="background:#10B981;"></span>
+                <span>Tire Flat</span>
+                <span class="d-code">#10B981</span>
+              </button>
+            </div>
+
+            <!-- Simulator Body -->
+            <div class="sim-dashboard">
               <!-- Visual Canvas Simulation -->
-              <div class="car-damage-preview" id="sim-canvas">
-                <div class="car-wireframe">
-                  <svg viewBox="0 0 500 220" class="car-vector-svg" fill="none">
-                    <!-- Stylized Car Profile Silhouette -->
+              <div class="sim-viewport">
+                <div class="car-frame-canvas">
+                  <svg viewBox="0 0 500 210" class="car-svg" fill="none">
+                    <!-- Clean vehicle silhouette -->
                     <path
-                      d="M40 160 H80 C90 120 150 120 160 160 H320 C330 120 390 120 400 160 H470 C480 160 490 150 480 130 L430 90 C410 70 380 60 330 60 H180 C150 60 110 80 80 110 L40 140 C30 150 30 160 40 160 Z"
-                      stroke="#30363d" stroke-width="2.5" fill="#161b22" />
+                      d="M35 150 H75 C85 115 140 115 150 150 H330 C340 115 395 115 405 150 H465 C475 150 485 140 475 120 L425 85 C405 68 375 58 325 58 H175 C145 58 108 78 78 105 L35 132 C25 142 25 150 35 150 Z"
+                      stroke="#30363d" stroke-width="2" fill="#161b22" />
                     <!-- Windows -->
-                    <path d="M180 75 H325 C345 75 375 80 390 95 L420 120 H150 L175 80 C178 77 180 75 180 75 Z"
+                    <path d="M175 70 H320 C340 70 370 76 385 90 L415 114 H145 L170 76 C173 72 175 70 175 70 Z"
                       fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
                     <!-- Wheels -->
-                    <circle cx="120" cy="160" r="32" fill="#090d16" stroke="#58a6ff" stroke-width="3" />
-                    <circle cx="120" cy="160" r="14" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
-                    <circle cx="360" cy="160" r="32" fill="#090d16" stroke="#58a6ff" stroke-width="3" />
-                    <circle cx="360" cy="160" r="14" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
-                    <!-- Headlights & Taillights -->
-                    <polygon points="465 130 480 135 475 145 460 140" fill="#FACC15" opacity="0.8" />
-                    <polygon points="40 140 32 145 35 155 45 150" fill="#FF2A6D" opacity="0.8" />
+                    <circle cx="112" cy="150" r="30" fill="#0d1117" stroke="#58a6ff" stroke-width="2.5" />
+                    <circle cx="112" cy="150" r="12" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
+                    <circle cx="368" cy="150" r="30" fill="#0d1117" stroke="#58a6ff" stroke-width="2.5" />
+                    <circle cx="368" cy="150" r="12" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
+                    <!-- Headlights / Taillights -->
+                    <polygon points="460 122 474 127 470 137 456 132" fill="#FACC15" opacity="0.9" />
+                    <polygon points="35 132 28 136 30 146 39 142" fill="#FF2A6D" opacity="0.9" />
                   </svg>
 
-                  <!-- Dynamic Defect Overlay Indicators -->
-                  <div class="detection-box active" id="sim-bbox" style="top: 38%; left: 45%; border-color: #FF7A00;">
-                    <div class="bbox-tag" style="background-color: #FF7A00;">Dent: 96.8%</div>
+                  <!-- Dynamic Bounding Box Overlay -->
+                  <div class="sim-bbox active" id="sim-bbox" style="top: 36%; left: 45%; border-color: #FF7A00;">
+                    <span class="bbox-label" style="background-color: #FF7A00;">Dent: 96.8%</span>
                     <div class="bbox-mask" style="background-color: rgba(255, 122, 0, 0.25);"></div>
                   </div>
                 </div>
 
-                <div class="sim-controls-bar">
-                  <div class="control-item">
-                    <label for="conf-slider">Confidence Threshold: <span id="conf-val">0.75</span></label>
+                <div class="sim-controls-strip">
+                  <div class="sim-slider-group">
+                    <label for="conf-slider">Confidence Threshold: <strong id="conf-val">0.75</strong></label>
                     <input type="range" id="conf-slider" min="0.05" max="0.95" step="0.05" value="0.75">
                   </div>
-                  <div class="control-item">
-                    <label for="iou-slider">NMS IoU Threshold: <span id="iou-val">0.45</span></label>
+                  <div class="sim-slider-group">
+                    <label for="iou-slider">NMS IoU Threshold: <strong id="iou-val">0.45</strong></label>
                     <input type="range" id="iou-slider" min="0.10" max="0.70" step="0.05" value="0.45">
                   </div>
                 </div>
               </div>
 
-              <!-- Real-time KPI Metric Cards Output -->
-              <div class="sim-kpi-sidebar">
-                <div class="kpi-box">
-                  <span class="kpi-label">Primary Detected Damage</span>
-                  <span class="kpi-value highlight-val" id="kpi-damage-type">Door Dent</span>
-                  <span class="kpi-sub" id="kpi-color-code">Hex: #FF7A00</span>
+              <!-- Live KPI Telemetry Sidebar -->
+              <div class="sim-telemetry">
+                <div class="telemetry-item">
+                  <span class="telemetry-label">Predicted Class</span>
+                  <span class="telemetry-value" id="kpi-damage-type">Door & Panel Dent</span>
+                  <span class="telemetry-sub" id="kpi-color-code">Hex Code: #FF7A00</span>
                 </div>
 
-                <div class="kpi-box">
-                  <span class="kpi-label">Peak Model Confidence</span>
-                  <span class="kpi-value text-emerald" id="kpi-confidence">96.8%</span>
-                  <div class="confidence-meter-bar">
-                    <div class="confidence-fill" id="kpi-conf-meter" style="width: 96.8%;"></div>
+                <div class="telemetry-item">
+                  <span class="telemetry-label">Prediction Confidence</span>
+                  <span class="telemetry-value text-green" id="kpi-confidence">96.8%</span>
+                  <div class="telemetry-bar">
+                    <div class="telemetry-fill" id="kpi-conf-meter" style="width: 96.8%; background:#FF7A00;"></div>
                   </div>
                 </div>
 
-                <div class="kpi-box">
-                  <span class="kpi-label">Defects Identified</span>
-                  <span class="kpi-value" id="kpi-total-defects">2 Instances</span>
-                  <span class="kpi-sub">Clustered in Region 3</span>
+                <div class="telemetry-item">
+                  <span class="telemetry-label">Cluster Instances</span>
+                  <span class="telemetry-value" id="kpi-total-defects">2 Instances Detected</span>
+                  <span class="telemetry-sub">RoI Dimension: 1024-D</span>
                 </div>
 
-                <div class="kpi-box">
-                  <span class="kpi-label">Severity Assessment</span>
-                  <span class="kpi-badge severity-moderate" id="kpi-severity">Moderate Damage</span>
-                  <span class="kpi-sub">Repair Required</span>
+                <div class="telemetry-item">
+                  <span class="telemetry-label">Inspection Grading</span>
+                  <span class="gh-tag-pill tag-moderate" id="kpi-severity">Moderate Damage</span>
+                  <span class="telemetry-sub">Repair Required</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Technical Architecture Highlights -->
-          <div class="thesis-tech-highlights">
-            <div class="tech-spec-item">
-              <span class="spec-label">Backbone Network</span>
-              <span class="spec-val">ResNet-50-FPN</span>
-            </div>
-            <div class="tech-spec-item">
-              <span class="spec-label">Framework</span>
-              <span class="spec-val">PyTorch & TorchVision</span>
-            </div>
-            <div class="tech-spec-item">
-              <span class="spec-label">Dataset</span>
-              <span class="spec-val">CarDD Benchmark</span>
-            </div>
-            <div class="tech-spec-item">
-              <span class="spec-label">Dashboard</span>
-              <span class="spec-val">Streamlit / Python</span>
-            </div>
-            <div class="tech-spec-item">
-              <span class="spec-label">Deployment</span>
-              <span class="spec-val">Containerized / Git Tracked</span>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- LIVE GITHUB REPOSITORIES DIRECTORY -->
-    <section class="repos-section" id="repositories">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">
-            <svg class="octicon" viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
-              <path
-                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25Z">
-              </path>
-            </svg>
-            GitHub Repositories
-          </div>
-          <h2 class="section-title">Open-Source Code & Projects</h2>
-          <p class="section-subtitle">
-            Synchronized directly with
-            <a href="https://github.com/ZAHIDUL-HOQUE?tab=repositories" target="_blank" rel="noopener noreferrer"
-              class="link-underlined">
-              github.com/ZAHIDUL-HOQUE?tab=repositories
-            </a>
-          </p>
-        </div>
-
-        <!-- Filter & Search Toolbar -->
-        <div class="repos-toolbar">
-          <div class="search-input-wrapper">
-            <svg class="search-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+      <!-- ==========================================
+           TAB 3: REPOSITORIES (Searchable, Filterable)
+           ========================================== -->
+      <section class="tab-pane" id="pane-repositories">
+        <!-- Toolbar: Search + Category Filter -->
+        <div class="gh-repos-toolbar">
+          <div class="repos-search-wrap">
+            <svg class="octicon octicon-search" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
               <path
                 d="m15.7 14.3-3.1-3.1C13.5 9.9 14 8.5 14 7A7 7 0 1 0 7 14c1.5 0 2.9-.5 4.2-1.4l3.1 3.1c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4ZM2 7a5 5 0 1 1 10 0A5 5 0 0 1 2 7Z">
               </path>
             </svg>
-            <input type="text" id="repo-search-input" placeholder="Find a repository by name, tech or keyword..."
-              aria-label="Search repositories">
+            <input type="text" id="repo-search-input" placeholder="Find a repository..." aria-label="Find a repository">
           </div>
 
-          <div class="filter-chips-row" id="filter-chips">
-            <button class="filter-chip active" data-filter="all">All Projects (3)</button>
-            <button class="filter-chip" data-filter="python">Python & AI (2)</button>
-            <button class="filter-chip" data-filter="web">Web & HTML (1)</button>
+          <div class="repos-filter-buttons" id="repos-filter-buttons">
+            <button class="gh-btn gh-btn-sm active" data-filter="all">All (3)</button>
+            <button class="gh-btn gh-btn-sm" data-filter="python">Python & AI (2)</button>
+            <button class="gh-btn gh-btn-sm" data-filter="web">Web & HTML (1)</button>
           </div>
         </div>
 
-        <!-- Repositories Grid Container -->
-        <div class="repos-grid" id="repos-container">
-          <!-- Dynamically populated or filled with rich fallback cards -->
+        <!-- Repositories List Container -->
+        <div class="gh-repos-list" id="repos-container">
+          <!-- Populated dynamically by app.js -->
         </div>
+      </section>
 
-        <!-- View All On GitHub Footer Card -->
-        <div class="github-profile-link-bar">
-          <div class="link-bar-content">
-            <svg class="octicon-large" viewBox="0 0 16 16" width="28" height="28" fill="currentColor">
-              <path
-                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-              </path>
-            </svg>
-            <div>
-              <h3>Want to explore all branches, forks and issues?</h3>
-              <p>Check out Zahidul Hoque's complete GitHub profile with star histories, commits and releases.</p>
-            </div>
-          </div>
-          <a href="https://github.com/ZAHIDUL-HOQUE?tab=repositories" target="_blank" rel="noopener noreferrer"
-            class="btn btn-github">
-            Browse All Repositories on GitHub &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTERACTIVE GIT TERMINAL / CLI PLAYGROUND -->
-    <section class="terminal-section" id="terminal-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag terminal-tag">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="4 17 10 11 4 5"></polyline>
-              <line x1="12" y1="19" x2="20" y2="19"></line>
-            </svg>
-            Interactive Git CLI
-          </div>
-          <h2 class="section-title">Developer Terminal</h2>
-          <p class="section-subtitle">
-            Interact with Zahidul's developer environment directly. Type <code>help</code> or click any quick command
-            chip below.
-          </p>
-        </div>
-
-        <!-- Command Shortcut Chips -->
-        <div class="terminal-chips-group">
-          <button class="cli-chip" data-cmd="git status">git status</button>
-          <button class="cli-chip" data-cmd="git log -n 3">git log</button>
-          <button class="cli-chip" data-cmd="cat thesis.md">cat thesis.md</button>
-          <button class="cli-chip" data-cmd="zahidul --skills">zahidul --skills</button>
-          <button class="cli-chip" data-cmd="curl github/zahidul">curl github/zahidul</button>
-          <button class="cli-chip" data-cmd="neofetch">neofetch</button>
-          <button class="cli-chip" data-cmd="help">help</button>
-          <button class="cli-chip" data-cmd="clear">clear</button>
-        </div>
-
-        <!-- Terminal Window Mockup -->
-        <div class="terminal-window" id="terminal-window">
-          <div class="terminal-titlebar">
-            <div class="term-dots">
-              <span class="dot dot-red" id="term-close-dot" title="Reset terminal"></span>
-              <span class="dot dot-yellow" title="Minimize"></span>
-              <span class="dot dot-green" title="Maximize"></span>
-            </div>
-            <div class="term-title">bash — zahidul@github-portfolio: ~/workspace</div>
-            <div class="term-branch">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="6" y1="3" x2="6" y2="15"></line>
-                <circle cx="18" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M18 9a9 9 0 0 1-9 9"></path>
+      <!-- ==========================================
+           TAB 4: EXPERIENCE & EDUCATION (Detailed Academic Timeline)
+           ========================================== -->
+      <section class="tab-pane" id="pane-experience">
+        <div class="gh-box">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M0 4.75C0 3.784.784 3 1.75 3h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM4.75 1.5h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z">
+                </path>
               </svg>
-              <span>main</span>
+              <span>Education & Academic Foundations</span>
+            </div>
+            <span class="gh-tag-pill">Accredited Degrees</span>
+          </div>
+
+          <div class="gh-box-body">
+            <!-- Timeline Item 1: Master of Science -->
+            <div class="edu-card">
+              <div class="edu-badge-col">
+                <span class="edu-icon">🎓</span>
+              </div>
+              <div class="edu-main-col">
+                <div class="edu-date">Sep 2024 – Present</div>
+                <h3 class="edu-degree">Master of Science (M.Sc.) in Data Science and Analytics with Advanced Research
+                </h3>
+                <div class="edu-school">University of Hertfordshire &bull; Hatfield, United Kingdom</div>
+                <p class="edu-desc">
+                  <strong>M.Sc. Thesis Project:</strong> <em>Prototypical Mask R-CNN for Vehicle Exterior Damage
+                    Detection</em>.<br>
+                  <strong>Academic Supervisor:</strong> Dr. Joseph Reddington.<br>
+                  <strong>Focus Areas:</strong> Advanced Computer Vision, Deep Learning Architectures, Deep Metric
+                  Learning, High-Dimensional Feature Space Geometry, Statistical Machine Learning, Neural Networks.
+                </p>
+                <div class="edu-tags">
+                  <span class="gh-tag-pill">Advanced Computer Vision</span>
+                  <span class="gh-tag-pill">Deep Metric Learning</span>
+                  <span class="gh-tag-pill">Statistical ML</span>
+                  <span class="gh-tag-pill">Neural Networks</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2: Bachelor of Science -->
+            <div class="edu-card">
+              <div class="edu-badge-col">
+                <span class="edu-icon">🏛️</span>
+              </div>
+              <div class="edu-main-col">
+                <div class="edu-date">Sep 2019 – Jun 2023</div>
+                <h3 class="edu-degree">Bachelor of Science (B.Sc.) in Computer Science</h3>
+                <div class="edu-school">Beijing Institute of Technology (BIT) &bull; Beijing, China</div>
+                <p class="edu-desc">
+                  Rigorous 4-year curriculum covering rigorous computational and mathematical theory.<br>
+                  <strong>Core Curriculum:</strong> Data Structures & Algorithms, Linear Algebra, Multivariable
+                  Calculus, Probability & Mathematical Statistics, Operating Systems, Computer Architecture, Software
+                  Engineering.
+                </p>
+                <div class="edu-tags">
+                  <span class="gh-tag-pill">Algorithms & Data Structures</span>
+                  <span class="gh-tag-pill">Linear Algebra</span>
+                  <span class="gh-tag-pill">Multivariable Calculus</span>
+                  <span class="gh-tag-pill">Operating Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Experience Box -->
+        <div class="gh-box" style="margin-top: 24px;">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M1.75 2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25H1.75ZM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 15H2.75A1.75 1.75 0 0 1 1 13.25V2.75Z">
+                </path>
+              </svg>
+              <span>Work & Project Experience</span>
+            </div>
+            <span class="gh-tag-pill">Industry Practice</span>
+          </div>
+
+          <div class="gh-box-body">
+            <div class="edu-card">
+              <div class="edu-badge-col">
+                <span class="edu-icon">💼</span>
+              </div>
+              <div class="edu-main-col">
+                <div class="edu-date">Feb 2023 – Mar 2023</div>
+                <h3 class="edu-degree">Project Associate (Computer Vision & Data Annotation)</h3>
+                <div class="edu-school">Quantanite &bull; Dhaka, Bangladesh</div>
+                <ul class="exp-bullet-list">
+                  <li>Executed high-precision data annotation, bounding box generation, and segmentation mask labeling
+                    for client machine learning and computer vision pipelines.</li>
+                  <li>Conducted systematic data cleaning, ground-truth quality auditing, and artifact filtering to
+                    eliminate label noise, enhancing downstream model training convergence.</li>
+                </ul>
+                <div class="edu-tags">
+                  <span class="gh-tag-pill">Data Annotation</span>
+                  <span class="gh-tag-pill">Bounding Box Generation</span>
+                  <span class="gh-tag-pill">Segmentation Mask Labeling</span>
+                  <span class="gh-tag-pill">Quality Auditing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications & Training Box -->
+        <div class="gh-box" style="margin-top: 24px;">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M8.75 1.5a.75.75 0 0 0-1.5 0v1.004A7.502 7.502 0 0 0 1 10c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5a7.502 7.502 0 0 0-6.25-7.496V1.5ZM8 4a6 6 0 1 1 0 12A6 6 0 0 1 8 4Z">
+                </path>
+              </svg>
+              <span>Certifications & Specialized Training</span>
+            </div>
+          </div>
+          <div class="gh-box-body">
+            <div class="certs-grid">
+              <div class="cert-item">
+                <span class="cert-check">✓</span>
+                <div>
+                  <strong>ML in Production: From Data Scientist to ML Engineer</strong>
+                  <p class="cert-desc">Practical model deployment, monitoring, artifact versioning, and pipeline
+                    orchestration.</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <span class="cert-check">✓</span>
+                <div>
+                  <strong>Python Programming: Practical & Real-Time Systems</strong>
+                  <p class="cert-desc">Advanced object-oriented programming, data structures, and algorithmic
+                    optimization.
+                  </p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <span class="cert-check">✓</span>
+                <div>
+                  <strong>Professional Back-Office Services</strong>
+                  <p class="cert-desc">Skills for Employment Investment Program (SEIP), Ministry of Finance, Bangladesh.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           TAB 5: SKILLS & LAB ALIGNMENT (UrbanITY Lab Research Statement)
+           ========================================== -->
+      <section class="tab-pane" id="pane-skills">
+        <!-- UrbanITY Lab Alignment & Research Statement -->
+        <div class="gh-box">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.53 9.53a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.75.75 0 0 1 1.06 1.06Z">
+                </path>
+              </svg>
+              <span>Alignment with UrbanITY Lab & Research Statement</span>
+            </div>
+            <span class="gh-tag-pill">Ph.D. Research Vision</span>
+          </div>
+
+          <div class="gh-box-body markdown-body">
+            <div class="alignment-block">
+              <h4>🛰️ LiDAR, Camera Perception & Sensor Fusion</h4>
+              <p>
+                Experience with multi-scale feature hierarchies (FPN), RoIAlign, and metric latent spaces directly
+                translates to roadside and vehicle-mounted 3D LiDAR/Camera object detection pipelines (e.g.
+                <strong>DINOSTAR</strong>, <strong>LiGuard</strong>) developed at UrbanITY Lab.
+              </p>
+            </div>
+
+            <div class="alignment-block">
+              <h4>🌐 Digital Twins & Sim2Real Gap (UrbanTwin)</h4>
+              <p>
+                Strong mathematical foundation in geometric regularisation, domain adaptation, and feature normalization
+                provides an ideal basis for tackling domain shifts between synthetic digital-twin LiDAR datasets (such
+                as <strong>LUMPI</strong>, <strong>V2X-Real-IC</strong>, <strong>TUMTraf-I</strong>) and real-world
+                sensor
+                streams.
+              </p>
+            </div>
+
+            <div class="alignment-block">
+              <h4>🛡️ Traffic Safety & VRU Protection</h4>
+              <p>
+                Passionate about applying real-time deep learning to vulnerable road user (VRU) detection, smart work
+                zone
+                monitoring, and incident mitigation for connected and automated transportation systems.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills Matrix Categorized by PDF -->
+        <div class="gh-box" style="margin-top: 24px;">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="M11.28 3.22a.75.75 0 0 0-1.06 1.06l1.22 1.22H6.5a4 4 0 0 0-4 4v3a.75.75 0 0 0 1.5 0v-3a2.5 2.5 0 0 1 2.5-2.5h4.94l-1.22 1.22a.75.75 0 1 0 1.06 1.06l2.5-2.5a.75.75 0 0 0 0-1.06l-2.5-2.5Z">
+                </path>
+              </svg>
+              <span>Technical Skills & Tooling Taxonomy</span>
             </div>
           </div>
 
-          <div class="terminal-screen" id="terminal-screen" tabindex="0">
-            <div class="term-output" id="terminal-history">
-              <div class="term-line welcome-line">
-                <span class="term-accent">Welcome to Zahidul Hoque's Git Terminal (v2.4.0)</span>
-              </div>
-              <div class="term-line">
-                <span class="term-muted">Type <span class="term-highlight">help</span> to list available commands or
-                  click the chips above.</span>
-              </div>
-              <div class="term-line">
-                <span class="term-muted">Connected to remote: <span
-                    class="term-emerald">https://github.com/ZAHIDUL-HOQUE</span></span>
+          <div class="gh-box-body">
+            <div class="skill-category-row">
+              <div class="skill-cat-title">Programming Languages</div>
+              <div class="skill-pills-row">
+                <span class="gh-pill">Python (Proficient)</span>
+                <span class="gh-pill">C / C++</span>
+                <span class="gh-pill">SQL</span>
+                <span class="gh-pill">Bash / Shell Scripting</span>
+                <span class="gh-pill">JavaScript (ES6+)</span>
               </div>
             </div>
 
-            <!-- Terminal Active Input Line -->
-            <form class="term-input-form" id="terminal-form" autocomplete="off">
-              <label for="term-input" class="term-prompt">
+            <div class="skill-category-row">
+              <div class="skill-cat-title">Machine Learning & Computer Vision</div>
+              <div class="skill-pills-row">
+                <span class="gh-pill accent-pill">PyTorch</span>
+                <span class="gh-pill accent-pill">Torchvision</span>
+                <span class="gh-pill accent-pill">Mask R-CNN</span>
+                <span class="gh-pill accent-pill">Faster R-CNN</span>
+                <span class="gh-pill accent-pill">Feature Pyramid Networks (FPN)</span>
+                <span class="gh-pill accent-pill">Deep Metric Learning</span>
+                <span class="gh-pill accent-pill">Prototypical Networks</span>
+                <span class="gh-pill">OpenCV</span>
+                <span class="gh-pill">Pycocotools</span>
+                <span class="gh-pill">Scikit-learn</span>
+                <span class="gh-pill">DETR (Transformers)</span>
+              </div>
+            </div>
+
+            <div class="skill-category-row">
+              <div class="skill-cat-title">Data Science & Visualization</div>
+              <div class="skill-pills-row">
+                <span class="gh-pill">NumPy</span>
+                <span class="gh-pill">Pandas</span>
+                <span class="gh-pill">SciPy</span>
+                <span class="gh-pill">Matplotlib</span>
+                <span class="gh-pill">Seaborn</span>
+                <span class="gh-pill">PIL</span>
+              </div>
+            </div>
+
+            <div class="skill-category-row">
+              <div class="skill-cat-title">Mathematical Foundations</div>
+              <div class="skill-pills-row">
+                <span class="gh-pill">Multivariable Calculus</span>
+                <span class="gh-pill">Linear Algebra</span>
+                <span class="gh-pill">High-Dimensional Vector Geometry</span>
+                <span class="gh-pill">Probability & Statistics</span>
+                <span class="gh-pill">Optimization Algorithms</span>
+              </div>
+            </div>
+
+            <div class="skill-category-row">
+              <div class="skill-cat-title">Developer Tools & Infrastructure</div>
+              <div class="skill-pills-row">
+                <span class="gh-pill">Git / GitHub</span>
+                <span class="gh-pill">Linux / Ubuntu Environments</span>
+                <span class="gh-pill">NVIDIA CUDA</span>
+                <span class="gh-pill">Mixed Precision Training (AMP)</span>
+                <span class="gh-pill">Jupyter Notebook</span>
+                <span class="gh-pill">LaTeX (Overleaf)</span>
+                <span class="gh-pill">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           TAB 6: TERMINAL (Interactive Git CLI)
+           ========================================== -->
+      <section class="tab-pane" id="pane-terminal">
+        <div class="gh-box">
+          <div class="gh-box-header">
+            <div class="gh-box-title">
+              <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path
+                  d="m4.47 4.22 4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 0 1-1.06-1.06L6.94 8.75 3.41 5.28a.75.75 0 0 1 1.06-1.06ZM8.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5Z">
+                </path>
+              </svg>
+              <span>Developer Environment & Git CLI Console</span>
+            </div>
+            <div class="terminal-chips-row">
+              <button class="gh-chip" data-cmd="cat thesis.md">cat thesis.md</button>
+              <button class="gh-chip" data-cmd="cat education.md">cat education.md</button>
+              <button class="gh-chip" data-cmd="cat lab_alignment.md">cat lab_alignment.md</button>
+              <button class="gh-chip" data-cmd="zahidul --skills">zahidul --skills</button>
+              <button class="gh-chip" data-cmd="neofetch">neofetch</button>
+              <button class="gh-chip" data-cmd="git status">git status</button>
+              <button class="gh-chip" data-cmd="git log -n 2">git log</button>
+              <button class="gh-chip" data-cmd="help">help</button>
+              <button class="gh-chip" data-cmd="clear">clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-container" id="terminal-screen" tabindex="0">
+            <div class="term-history" id="terminal-history">
+              <div class="term-line term-accent">Welcome to Zahidul Hoque's Academic Terminal (v3.0.0-academic)</div>
+              <div class="term-line term-muted">Type <span class="term-green">help</span> or click any command above to
+                inspect verified academic records.</div>
+              <div class="term-line term-muted">Session authenticated: <span
+                  class="term-blue">https://github.com/ZAHIDUL-HOQUE</span></div>
+            </div>
+
+            <form class="term-form" id="terminal-form" autocomplete="off">
+              <label for="term-input" class="term-label">
                 <span class="term-user">zahidul</span><span class="term-at">@</span><span
-                  class="term-host">github</span>:<span class="term-path">~</span>$
+                  class="term-host">github</span>:<span class="term-path">~</span>$&nbsp;
               </label>
-              <input type="text" id="term-input" class="term-input" autofocus spellcheck="false" autocomplete="off">
+              <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false" autofocus>
             </form>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- TECHNICAL SKILLS & STACK -->
-    <section class="skills-section" id="skills">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-            </svg>
-            Technical Capabilities
-          </div>
-          <h2 class="section-title">Skills & Engineering Stack</h2>
-          <p class="section-subtitle">
-            Tools, frameworks, and methodologies deployed across machine learning, computer vision, and software
-            engineering.
-          </p>
-        </div>
-
-        <div class="skills-categories-grid">
-          <!-- Deep Learning & Computer Vision -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon dl-icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <!-- ==========================================
+           TAB 7: CONTACT (GitHub Issue Style Form & Direct Reach)
+           ========================================== -->
+      <section class="tab-pane" id="pane-contact">
+        <div class="gh-contact-layout">
+          <!-- Left: Direct Contact Information -->
+          <div class="gh-box">
+            <div class="gh-box-header">
+              <div class="gh-box-title">
+                <svg class="octicon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
                   <path
-                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                  </path>
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                </svg>
-              </div>
-              <h3 class="cat-title">Computer Vision & AI</h3>
-            </div>
-            <p class="cat-desc">Specialized in few-shot detection, instance segmentation, and transformer vision
-              pipelines.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">PyTorch</span>
-              <span class="skill-tag">Prototypical Mask R-CNN</span>
-              <span class="skill-tag">DETR (Transformers)</span>
-              <span class="skill-tag">Few-Shot Object Detection</span>
-              <span class="skill-tag">ResNet-50-FPN</span>
-              <span class="skill-tag">CarDD Dataset</span>
-              <span class="skill-tag">OpenCV</span>
-              <span class="skill-tag">Instance Segmentation</span>
-            </div>
-          </div>
-
-          <!-- Programming Languages -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon prog-icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <h3 class="cat-title">Programming & Logic</h3>
-            </div>
-            <p class="cat-desc">Clean, maintainable, object-oriented, and modular codebases.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Python (Core)</span>
-              <span class="skill-tag">JavaScript (ES6+)</span>
-              <span class="skill-tag">HTML5 & Semantic Markup</span>
-              <span class="skill-tag">Modern CSS3 & Animations</span>
-              <span class="skill-tag">SQL & Data Models</span>
-              <span class="skill-tag">Bash / PowerShell</span>
-            </div>
-          </div>
-
-          <!-- Tools, Git & Deployment -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon git-icon">
-                <svg class="octicon" viewBox="0 0 16 16" width="22" height="22" fill="currentColor">
-                  <path
-                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                    d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 4.887v7.363c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V4.887l-6.286 4.4a.75.75 0 0 1-.856 0L1.5 4.887Zm.58-1.387 5.92 4.144L13.92 3.5H2.08Z">
                   </path>
                 </svg>
-              </div>
-              <h3 class="cat-title">Git, Tools & Platforms</h3>
-            </div>
-            <p class="cat-desc">Production-grade version control, rapid prototyping, and web deployments.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">GitHub Ecosystem</span>
-              <span class="skill-tag">Git Flow & PRs</span>
-              <span class="skill-tag">Streamlit Dashboards</span>
-              <span class="skill-tag">Linux / Unix Shell</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Jupyter Notebooks</span>
-              <span class="skill-tag">Virtual Environments</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACADEMIC & PROFESSIONAL JOURNEY -->
-    <section class="journey-section" id="journey">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-            Academic Foundation
-          </div>
-          <h2 class="section-title">Education & Milestones</h2>
-          <p class="section-subtitle">
-            Strong foundations in Data Science, Machine Learning, and Computer Vision.
-          </p>
-        </div>
-
-        <div class="timeline-wrapper">
-          <!-- Timeline Item 1 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">MSc Graduate — Advanced Research Degree</div>
-              <h3 class="timeline-title">Master of Science in Data Science and Analytics with Advanced Research</h3>
-              <div class="timeline-institution">University of Hertfordshire, United Kingdom</div>
-              <p class="timeline-desc">
-                Thesis: <em>Vehicle Exterior Damage Detection, Instance Segmentation and Grading via Prototypical
-                  Mask R-CNN</em>. In my thesis research, I experimented with Mask R-CNN incorporating a prototypical
-                head
-                and ResNet-50 as backbone on the CarDD dataset, evaluating few-shot visual defect segmentation and
-                deploying an interactive Streamlit GUI dashboard.
-              </p>
-              <div class="timeline-footer">
-                <span class="id-tag">Postgraduate Degree</span>
-                <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-"
-                  target="_blank" rel="noopener noreferrer" class="timeline-link">
-                  View Repository on GitHub &rarr;
-                </a>
+                <span>Direct Inquiries & Profiles</span>
               </div>
             </div>
-          </div>
 
-          <!-- Timeline Item 2 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">Open-Source AI & Vision Development</div>
-              <h3 class="timeline-title">Two-Model Pipeline & Deep Learning Systems</h3>
-              <div class="timeline-institution">GitHub Community: @ZAHIDUL-HOQUE</div>
-              <p class="timeline-desc">
-                Explored DETR (Detection Transformers) and Few-Shot Object Detection (FSOD) pipelines for complex visual
-                defect segmentation.
-                Committed to open science and accessible developer repositories.
-              </p>
-              <div class="timeline-footer">
-                <a href="https://github.com/ZAHIDUL-HOQUE/DETR-FSOD-vehicle-damage-detection_two-model-pipeline"
-                  target="_blank" rel="noopener noreferrer" class="timeline-link">
-                  Explore DETR Pipeline &rarr;
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT & CONNECT -->
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div class="contact-grid">
-          <!-- Left Column -->
-          <div class="contact-info-col">
-            <div class="section-tag">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              Get In Touch
-            </div>
-            <h2 class="section-title">Let's Build Something Exceptional</h2>
-            <p class="contact-desc">
-              Whether you are looking to collaborate on Computer Vision, discuss Prototypical Mask R-CNN models,
-              or hire a Data Science & AI Engineer, reach out directly or connect via GitHub.
-            </p>
-
-            <div class="contact-methods">
-              <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
-                class="contact-method-card">
-                <div class="method-icon github-method">
-                  <svg class="octicon" viewBox="0 0 16 16" width="22" height="22" fill="currentColor">
-                    <path
-                      d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-                    </path>
-                  </svg>
-                </div>
-                <div class="method-details">
-                  <span class="method-title">GitHub Profile</span>
-                  <span class="method-val">github.com/ZAHIDUL-HOQUE</span>
-                  <span class="method-action">View Activity & Follow &rarr;</span>
-                </div>
-              </a>
-
-              <div class="contact-method-card" id="copy-email-card" style="cursor: pointer;">
-                <div class="method-icon email-method">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <div class="method-details">
-                  <span class="method-title">Direct Inquiries</span>
-                  <span class="method-val">zahidulhoqueomy@gmail.com</span>
-                  <span class="method-action">Click to copy email address</span>
-                </div>
+            <div class="gh-box-body">
+              <div class="contact-card-item">
+                <div class="contact-label">Primary Email</div>
+                <a href="mailto:zahidulhoqueomy@gmail.com" class="contact-val gh-link">zahidulhoqueomy@gmail.com</a>
+                <button class="gh-btn gh-btn-sm copy-btn" data-clipboard="zahidulhoqueomy@gmail.com">Copy</button>
               </div>
 
-              <div class="contact-method-card">
-                <div class="method-icon location-method">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div class="method-details">
-                  <span class="method-title">Location</span>
-                  <span class="method-val">United Kingdom (UK)</span>
-                  <span class="method-action">Eligible for on-site & remote roles</span>
-                </div>
+              <div class="contact-card-item">
+                <div class="contact-label">Academic University Email</div>
+                <a href="mailto:zh24abg@herts.ac.uk" class="contact-val gh-link">zh24abg@herts.ac.uk</a>
+                <button class="gh-btn gh-btn-sm copy-btn" data-clipboard="zh24abg@herts.ac.uk">Copy</button>
               </div>
-            </div>
-          </div>
 
-          <!-- Right Column: Interactive Quick Message Form -->
-          <div class="contact-form-col">
-            <div class="glass-form-card">
-              <h3 class="form-title">Send a Quick Message</h3>
-              <p class="form-subtitle">Messages are formatted and prepared for instant dispatch.</p>
+              <div class="contact-card-item">
+                <div class="contact-label">Phone</div>
+                <span class="contact-val">+44 7405 698652</span>
+                <button class="gh-btn gh-btn-sm copy-btn" data-clipboard="+447405698652">Copy</button>
+              </div>
 
-              <form id="contact-form" class="styled-form">
-                <div class="form-group">
-                  <label for="contact-name">Your Name</label>
-                  <input type="text" id="contact-name" name="name" required placeholder="e.g. Sarah Jenkins">
-                </div>
+              <div class="contact-card-item">
+                <div class="contact-label">Location</div>
+                <span class="contact-val">Ilford, London, United Kingdom (UK)</span>
+              </div>
 
-                <div class="form-group">
-                  <label for="contact-email">Your Email or GitHub Handle</label>
-                  <input type="text" id="contact-email" name="email" required
-                    placeholder="e.g. sarah@company.com or @sjenkins">
-                </div>
+              <div class="contact-card-item">
+                <div class="contact-label">LinkedIn Profile</div>
+                <a href="https://www.linkedin.com/in/zahidul--hoque" target="_blank" rel="noopener noreferrer"
+                  class="contact-val gh-link">linkedin.com/in/zahidul--hoque &rarr;</a>
+              </div>
 
-                <div class="form-group">
-                  <label for="contact-subject">Topic</label>
-                  <select id="contact-subject" name="subject">
-                    <option value="Data Science & AI Role">Data Science & AI Opportunity</option>
-                    <option value="Thesis Project Inquiry">Master's Thesis / Project Inquiry</option>
-                    <option value="GitHub Project Inquiry">GitHub Repository Question</option>
-                    <option value="Other">General Hello</option>
-                  </select>
-                </div>
+              <div class="contact-card-item">
+                <div class="contact-label">GitHub Profile</div>
+                <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer"
+                  class="contact-val gh-link">github.com/ZAHIDUL-HOQUE &rarr;</a>
+              </div>
 
-                <div class="form-group">
-                  <label for="contact-message">Message</label>
-                  <textarea id="contact-message" name="message" rows="4" required
-                    placeholder="Tell me about your project, team, or inquiry..."></textarea>
-                </div>
 
-                <button type="submit" class="btn btn-primary btn-block btn-send" id="btn-submit-message">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                  </svg>
-                  <span>Send Message</span>
-                </button>
-              </form>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <div class="footer-brand">
-          <svg class="octicon" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-            <path
-              d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
-            </path>
-          </svg>
-          <span class="footer-title">ZAHIDUL HOQUE // GITHUB PORTFOLIO</span>
-        </div>
-        <p class="footer-copy">
-          Designed and developed for <strong>Zahidul Hoque</strong>. Powered by vanilla web standards and GitHub
-          open-source APIs.
-        </p>
+    </main>
+  </div>
+
+  <!-- Minimal GitHub Profile Footer -->
+  <footer class="gh-footer">
+    <div class="gh-footer-container">
+      <div class="gh-footer-left">
+        <svg class="octicon" height="24" viewBox="0 0 16 16" width="24" fill="currentColor">
+          <path
+            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.45 1.1 0 0 .52.33 1.1.28.01.69.01 1.34.01 1.54 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+          </path>
+        </svg>
+        <span>&copy; 2026 Zahidul Hoque. Designed with GitHub Primer Standards.</span>
       </div>
 
-      <div class="footer-right">
-        <ul class="footer-nav">
-          <li><a href="#hero">Overview</a></li>
-          <li><a href="#github-spotlight">Activity</a></li>
-          <li><a href="#research">Thesis</a></li>
-          <li><a href="#repositories">Repositories</a></li>
-          <li><a href="#terminal-section">Terminal</a></li>
-          <li><a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
-        <div class="footer-tagline">
-          Built with <span>&hearts;</span> and PyTorch in the United Kingdom
-        </div>
-      </div>
+      <ul class="gh-footer-links">
+        <li><a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/zahidul--hoque" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li><a href="mailto:zahidulhoqueomy@gmail.com">Contact</a></li>
+        <li><a href="#overview" class="gh-tab-trigger" data-target-tab="overview">Back to Top</a></li>
+      </ul>
     </div>
   </footer>
 
-  <!-- FLOATING TOAST NOTIFICATION CONTAINER -->
-  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+  <!-- Toast Notification Container -->
+  <div class="gh-toast-container" id="toast-container" aria-live="polite"></div>
 
-  <!-- SCRIPT -->
+  <!-- Core JavaScript -->
   <script src="app.js"></script>
 </body>
 
