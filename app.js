@@ -41,20 +41,12 @@ const FALLBACK_REPOS = [
     tags: ["DETR", "Transformers", "Few-Shot", "Object Detection", "PyTorch"],
     license: "Apache-2.0",
     isFeatured: false
-  },
-  {
-    name: "portfolio-website-for-Shuvo-Sultan",
-    displayName: "portfolio-website-for-Shuvo-Sultan",
-    description: "Modern, responsive personal portfolio website engineered with clean semantic HTML structure and fluid CSS styling.",
-    language: "HTML",
-    html_url: "https://github.com/ZAHIDUL-HOQUE/portfolio-website-for-Shuvo-Sultan",
-    stargazers_count: 0,
-    forks_count: 0,
-    category: "web",
-    tags: ["Frontend", "HTML5", "CSS3", "JavaScript"],
-    license: "MIT",
-    isFeatured: false
   }
+];
+
+const EXCLUDED_REPOS = [
+  "portfolio-website-for-shuvo-sultan",
+  "zahidul-hoque-portfolio-website"
 ];
 
 const LANGUAGE_COLORS = {
@@ -130,6 +122,8 @@ function initTabs() {
 // ==========================================
 // 4. REPOSITORIES DIRECTORY & SEARCH
 // ==========================================
+let currentReposList = [...FALLBACK_REPOS];
+
 async function initRepositories() {
   const container = document.getElementById("repos-container");
   const tabCount = document.getElementById("tab-repos-count");
@@ -151,7 +145,12 @@ async function initRepositories() {
     if (userRes.ok && reposRes.ok) {
       const liveRepos = await reposRes.json();
       if (Array.isArray(liveRepos) && liveRepos.length > 0) {
-        repos = liveRepos.map(live => {
+        // Exclude unwanted repositories
+        const filteredLive = liveRepos.filter(live =>
+          !EXCLUDED_REPOS.includes(live.name.toLowerCase())
+        );
+
+        repos = filteredLive.map(live => {
           const match = FALLBACK_REPOS.find(f => f.name.toLowerCase() === live.name.toLowerCase());
           return {
             name: live.name,
@@ -171,6 +170,10 @@ async function initRepositories() {
   } catch (err) {
     console.info("Using cached GitHub portfolio repository records.");
   }
+
+  // Ensure excluded repositories are strictly filtered
+  repos = repos.filter(r => !EXCLUDED_REPOS.includes(r.name.toLowerCase()));
+  currentReposList = repos;
 
   // Update stars count
   const totalStars = repos.reduce((acc, r) => acc + (r.stargazers_count || 0), 0);
@@ -243,9 +246,27 @@ function renderReposList(repos) {
 }
 
 function setupRepoFilterButtons(allRepos) {
+  const allBtn = document.querySelector('#repos-filter-buttons [data-filter="all"]');
+  const pythonBtn = document.querySelector('#repos-filter-buttons [data-filter="python"]');
+  const webBtn = document.querySelector('#repos-filter-buttons [data-filter="web"]');
+
+  const pythonCount = allRepos.filter(r => r.category === "python").length;
+  const webCount = allRepos.filter(r => r.category === "web").length;
+
+  if (allBtn) allBtn.textContent = `All (${allRepos.length})`;
+  if (pythonBtn) pythonBtn.textContent = `Python & AI (${pythonCount})`;
+  if (webBtn) {
+    if (webCount === 0) {
+      webBtn.style.display = "none";
+    } else {
+      webBtn.style.display = "";
+      webBtn.textContent = `Web & HTML (${webCount})`;
+    }
+  }
+
   const buttons = document.querySelectorAll("#repos-filter-buttons .gh-btn");
   buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
+    btn.onclick = () => {
       buttons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
@@ -256,7 +277,7 @@ function setupRepoFilterButtons(allRepos) {
         const filtered = allRepos.filter(r => r.category === filter);
         renderReposList(filtered);
       }
-    });
+    };
   });
 }
 
@@ -267,10 +288,10 @@ function initSearch() {
   function filterRepos(query) {
     const q = query.toLowerCase().trim();
     if (!q) {
-      renderReposList(FALLBACK_REPOS);
+      renderReposList(currentReposList);
       return;
     }
-    const filtered = FALLBACK_REPOS.filter(r =>
+    const filtered = currentReposList.filter(r =>
       r.name.toLowerCase().includes(q) ||
       (r.displayName && r.displayName.toLowerCase().includes(q)) ||
       (r.description && r.description.toLowerCase().includes(q)) ||

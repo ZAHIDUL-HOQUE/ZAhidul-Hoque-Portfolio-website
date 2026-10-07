@@ -41,6 +41,7 @@ Built using **Vanilla Web Standards (HTML5, Vanilla CSS3, Modern JavaScript)** a
 # Start local Node server
 node server.js
 ```
+
 Then visit `http://127.0.0.1:3000` in your web browser.
 
 ---
