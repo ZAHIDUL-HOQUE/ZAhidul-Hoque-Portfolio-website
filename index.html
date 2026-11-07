@@ -375,16 +375,20 @@
             <h3>🎓 Key Academic Highlights</h3>
             <ul>
               <li>
-                <strong>Master's Final Research Project (7COM1039):</strong> Formulated a hybrid instance segmentation
-                architecture integrating <strong>Mask R-CNN with Deep Metric Learning</strong> (replacing standard
-                parametric linear classification with a Squared Euclidean Prototypical Predictor head). Evaluated on the
-                CarDD benchmark, achieving <strong>mAP 0.319 (IoU 0.50:0.95)</strong>, <strong>AP@50 0.630</strong>, and
-                <strong>AR 0.436</strong> across 810 test images.
+                <strong>Master's Final Research Project (7COM1039-0901-2025):</strong> Formulated a hybrid instance
+                segmentation architecture integrating <strong>Mask R-CNN with Deep Metric Learning</strong> (replacing
+                standard parametric linear classification with a Squared Euclidean Prototypical Box Predictor head).
+                Evaluated on the CarDD benchmark (810 validation images), achieving <strong>mAP 0.319 (IoU
+                  0.50:0.95)</strong>, <strong>AP@50 0.630</strong>, <strong>Average Recall (AR) 0.436</strong>, and
+                <strong>F1-Score 0.515</strong>.
               </li>
               <li>
-                <strong>Mathematical Foundation:</strong> Enforced strict $L_2$ normalisation on 1024-D RoI embeddings
-                and class prototypes, proving empirical pairwise distance $1.91 \le d^2 \le 2.09$ ($\theta \approx
-                90^\circ$), confirming convergence to an orthogonal latent feature space.
+                <strong>Mathematical Foundation:</strong> Enforced strict L<sub>2</sub> normalisation on 1024-D RoI
+                embeddings and learnable class prototypes (‖p‖<sub>2</sub> = 1), proving via pairwise squared Euclidean
+                distance d<sup>2</sup>(p<sub>i</sub>, p<sub>j</sub>) = 2 &minus; 2cos(&theta;) that off-diagonal
+                class centroids cluster tightly around <strong>2.00</strong> (<strong>1.90 &le; d<sup>2</sup> &le;
+                  2.16</strong>, &theta; &approx; 90&deg;), confirming convergence to an orthogonal latent feature
+                space.
               </li>
               <li>
                 <strong>Undergraduate Foundation:</strong> 4-year Computer Science degree at Beijing Institute of
@@ -446,7 +450,7 @@
       </section>
 
       <!-- ==========================================
-           TAB 2: RESEARCH & THESIS (Master's Project & Interactive CarDD Demo)
+           TAB 2: RESEARCH & THESIS (Master's Project Report 7COM1039-0901-2025)
            ========================================== -->
       <section class="tab-pane" id="pane-research">
         <div class="gh-box">
@@ -457,11 +461,17 @@
                   d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.53 9.53a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.75.75 0 0 1 1.06 1.06Z">
                 </path>
               </svg>
-              <span>Master's Research & Technical Contributions (7COM1039)</span>
+              <span>Master's Final Project Report (7COM1039-0901-2025)</span>
             </div>
             <div class="gh-box-actions">
-              <span class="gh-tag-pill">Sep 2024 – 2025</span>
-
+              <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-"
+                target="_blank" rel="noopener noreferrer" class="gh-btn gh-btn-sm gh-btn-thesis-blink">
+                <span class="gh-status-beacon" aria-hidden="true">
+                  <span class="gh-beacon-ping"></span>
+                  <span class="gh-beacon-dot"></span>
+                </span>
+                <span>Read Full Thesis (PDF) &rarr;</span>
+              </a>
               <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-"
                 target="_blank" rel="noopener noreferrer" class="gh-btn gh-btn-sm">
                 View Codebase on GitHub &rarr;
@@ -472,8 +482,10 @@
           <div class="gh-box-body markdown-body">
             <h2>Prototypical Mask R-CNN for Vehicle Exterior Damage Detection</h2>
             <p class="thesis-institution-line">
-              <strong>University of Hertfordshire</strong> &bull; Supervisor: <strong>Dr. Joseph Reddington</strong>
-              &bull; Academic Module: <strong>7COM1039 (Advanced Research Project)</strong>
+              <strong>University of Hertfordshire</strong> &bull; Degree: <strong>M.Sc. in Data Science and Analytics
+                with Advanced Research</strong> &bull;
+              Supervisor: <strong>Dr. Joseph Reddington</strong> &bull; Module: <strong>7COM1039-0901-2025 (Advanced
+                Computer Science Masters Project)</strong>
             </p>
 
             <div class="paper-summary-card">
@@ -484,251 +496,352 @@
                 </div>
                 <div class="paper-spec">
                   <span class="spec-label">Backbone</span>
-                  <span class="spec-value">ResNet-50-FPN</span>
+                  <span class="spec-value">ResNet-50-FPN (MS-COCO)</span>
                 </div>
                 <div class="paper-spec">
-                  <span class="spec-label">Benchmark</span>
-                  <span class="spec-value">CarDD (810 Test Images)</span>
+                  <span class="spec-label">Benchmark (CarDD)</span>
+                  <span class="spec-value">4,000 Images (810 Val)</span>
                 </div>
                 <div class="paper-spec">
-                  <span class="spec-label">Overall mAP</span>
-                  <span class="spec-value text-green">0.319 (IoU 0.50:0.95)</span>
+                  <span class="spec-label">mAP (0.50:0.95)</span>
+                  <span class="spec-value text-green">0.319 (Peak ~32.2%)</span>
                 </div>
                 <div class="paper-spec">
-                  <span class="spec-label">AP@50</span>
-                  <span class="spec-value text-green">0.630</span>
+                  <span class="spec-label">AP@50 &bull; F1-Score</span>
+                  <span class="spec-value text-green">0.630 &bull; 0.515</span>
                 </div>
                 <div class="paper-spec">
                   <span class="spec-label">Average Recall (AR)</span>
-                  <span class="spec-value text-green">0.436</span>
+                  <span class="spec-value text-green">0.436 (MaxDets=100)</span>
                 </div>
               </div>
             </div>
 
-            <h3>Core Architectural & Scientific Contributions</h3>
+            <!-- Abstract & Research Questions -->
+            <h3>📑 Abstract &amp; Research Questions</h3>
+            <p>
+              Automated vehicle damage assessment promises to replace subjective, slow manual insurance surveys with
+              consistent visual audit trails. However, real-world vehicle damage datasets exhibit severe long-tailed
+              class imbalance (an <strong>11.4 : 1</strong> ratio in CarDD) and high visual overlap between categories
+              such as scratches and structural cracks. Standard two-stage detectors relying on parametric linear
+              classification heads (<code>Score = Wx + b</code>) suffer from majority-class gradient dominance and fail
+              to separate visually similar or underrepresented defects.
+            </p>
+            <p>
+              Heavily inspired by <strong>Prototypical Networks</strong> (Snell et al., 2017) and <strong>Meta
+                R-CNN</strong> predictor head remodelling (Yan et al., 2019), this study develops a hybrid
+              <strong>Prototypical Mask R-CNN</strong> that replaces the fully connected linear classifier with a
+              <strong>Squared Euclidean Prototypical Box Predictor</strong>, classifying Regions of Interest (RoIs) by
+              minimising distance to learnable class centroids on a unit hypersphere rather than learning separating
+              hyperplanes.
+            </p>
+
+            <div class="gh-callout">
+              <div class="callout-icon">🎯</div>
+              <div class="callout-text">
+                <strong>Core Research Questions Investigated:</strong>
+                <ol style="margin: 6px 0 0 18px; padding: 0;">
+                  <li><strong>RQ1:</strong> Can a metric learning approach like Prototypical Networks be integrated into
+                    Mask R-CNN to generalize effectively across imbalanced and novel vehicle damage classes?</li>
+                  <li><strong>RQ2:</strong> How does the integration of a Squared Euclidean Prototypical Head within a
+                    Mask R-CNN framework influence the geometric arrangement of the 1024-D latent feature space?</li>
+                  <li><strong>RQ3:</strong> What is the measured performance in <strong>F1-Score (0.515)</strong> and
+                    <strong>Average Recall (AR = 0.436)</strong> achieved on minority classes, and does the architecture
+                    mitigate the bias inherent in long-tail distributions?</li>
+                </ol>
+              </div>
+            </div>
+
+            <h3>🔬 Methodology, EDA &amp; Architectural Contributions</h3>
             <div class="contributions-grid">
               <div class="contrib-card">
-                <h4>1. Novel Hybrid Deep Learning Architecture</h4>
+                <h4>1. Predictor Head Remodelling</h4>
                 <p>
-                  Engineered and implemented an end-to-end instance segmentation network integrating Mask R-CNN with
-                  <strong>Deep Metric Learning</strong>, replacing the standard parametric linear classification layer
-                  with a <strong>Squared Euclidean Prototypical Predictor head</strong>.
+                  Replaced the standard Mask R-CNN linear classification layer with a custom
+                  <code>PrototypicalBoxPredictor</code> containing static, Xavier-initialized learnable class prototypes
+                  (<code>num_classes &times; 1024</code>), operating in parallel with a linear bounding-box coordinate
+                  regressor and a decoupled <code>28 &times; 28</code> Fully Convolutional Network (FCN) binary mask
+                  branch after bilinear <code>RoIAlign</code>.
                 </p>
               </div>
 
               <div class="contrib-card">
-                <h4>2. Tackling Extreme Class Imbalance</h4>
+                <h4>2. Hyperspherical Latent Geometry</h4>
                 <p>
-                  Formulated a geometric centroid-learning framework to resolve the severe long-tail distribution and
-                  gradient dominance inherent in vehicle exterior inspection datasets (CarDD benchmark), eliminating
-                  minority class collapse (e.g. flat tires, shattered glass).
-                </p>
-              </div>
-
-              <div class="contrib-card">
-                <h4>3. Hyperspherical Latent Geometry</h4>
-                <p>
-                  Enforced strict $L_2$ normalisation on both 1024-D RoI feature embeddings and learnable class
-                  prototypes, projecting representations onto a unit hypersphere ($\|p\| = 1$).
-                  Mathematically derived that pairwise squared Euclidean distance:
+                  Enforced strict L<sub>2</sub> normalisation on both 1024-D RoI embeddings (<code>x&#770; = x /
+                    ‖x‖<sub>2</sub></code>) and class prototypes (<code>P&#770;<sub>k</sub> = P<sub>k</sub> /
+                    ‖P<sub>k</sub>‖<sub>2</sub></code>), computing logits via temperature-scaled Negative Squared
+                  Euclidean Distance:
                 </p>
                 <div class="math-block">
-                  $$d^2 = 2 - 2\cos(\theta)$$
-                  $$\text{Empirical values: } 1.91 \le d^2 \le 2.09 \quad (\theta \approx 90^\circ)$$
+                  <div>S<sub>k</sub> = &minus;&alpha; &middot; ‖x&#770; &minus; P&#770;<sub>k</sub>‖<sub>2</sub><sup>2</sup> &nbsp;&nbsp;(&alpha; = 20.0)</div>
+                  <div style="margin-top: 4px;">d<sup>2</sup>(p<sub>i</sub>, p<sub>j</sub>) = ‖p<sub>i</sub> &minus; p<sub>j</sub>‖<sub>2</sub><sup>2</sup> = 2 &minus; 2cos(&theta;)</div>
                 </div>
                 <p class="math-caption">
-                  Proved mathematically and empirically that the model converged to an orthogonal feature space that
-                  effectively eliminates inter-class visual confusion.
+                  On the unit hypersphere (‖p‖<sub>2</sub> = 1), a squared distance of 2.00 proves 90&deg; orthogonal
+                  separation between damage classes.
                 </p>
               </div>
 
               <div class="contrib-card">
-                <h4>4. Optimization & Mixed-Precision Protocol</h4>
+                <h4>3. CarDD Statistical &amp; Geometric EDA</h4>
                 <p>
-                  Leveraged a ResNet-50-FPN backbone pre-trained on MS-COCO, configured with temperature-scaled softmax
-                  ($\alpha = 20$) for rapid monotonic loss convergence, SGD with momentum, and learning rate
-                  step-decay. Utilised Automatic Mixed Precision (<code>torch.cuda.amp</code>) to maximize memory
-                  efficiency on an NVIDIA RTX 3060 (12GB).
+                  Analyzed all 4,000 high-resolution CarDD images (&gt;9,000 pixel-level instances across 2,817 train /
+                  810 val / 373 test): quantified the <strong>11.4 : 1</strong> head-to-tail imbalance, applied
+                  <strong>Log<sub>2</sub> Aspect Ratio transformation</strong> (<code>log<sub>2</sub>(W/H)</code>) to
+                  contrast square dents (<code>0</code>) against elongated scratches (<code>&minus;3 to +3</code>),
+                  evaluated <strong>&radic;Area scale variance</strong>, and mapped 2D spatial <strong>Photographer
+                    Centre Bias</strong>.
                 </p>
               </div>
 
               <div class="contrib-card">
-                <h4>5. Data Augmentation & Spatial Fidelity</h4>
+                <h4>4. Augmentation &amp; Spatial Consistency</h4>
                 <p>
-                  Engineered synchronized spatial transformations (<code>torchvision.transforms</code>) dynamically
-                  mirroring binary segmentation masks and bounding box coordinates during horizontal flips to maintain
-                  pixel-level spatial fidelity under varying sensor orientations.
+                  Mitigated specular paint reflections and uncontrolled lighting via stochastic <strong>Color
+                    Jitter</strong> (Brightness <code>&plusmn;0.2</code>, Contrast <code>&plusmn;0.2</code>, Saturation
+                  <code>&plusmn;0.2</code>) and random horizontal flipping (<code>p = 0.5</code>) with synchronous
+                  bounding-box coordinate inversion and binary mask mirroring
+                  (<code>torchvision.transforms.functional.hflip</code>).
                 </p>
               </div>
 
               <div class="contrib-card">
-                <h4>6. Future Vision-Language-Action (VLA) Roadmap</h4>
+                <h4>5. Mixed-Precision Training Dynamics</h4>
                 <p>
-                  Proposed extending metric damage embeddings into the latent space of Multimodal Large Language Models
-                  (MLLMs) and VLA frameworks for automated, explainable vehicle safety diagnostics in autonomous
-                  mobility ecosystems.
+                  Trained for 30 epochs on an NVIDIA RTX 3060 (12GB VRAM, <code>Batch Size = 4</code>,
+                  <code>NMS = 0.25</code>) using <code>torch.cuda.amp.GradScaler</code> (FP16/FP32), SGD
+                  (<code>lr = 0.001</code>, <code>momentum = 0.9</code>, <code>weight_decay = 0.0005</code>),
+                  <code>StepLR</code> (decay &times;0.1 every 5 epochs), and gradient clipping
+                  (<code>max_norm = 5.0</code>). Training loss dropped from <code>0.90 &rarr; 0.65</code> (Epochs 1–5),
+                  formed an elbow at Epoch 6, and plateaued smoothly at <code>0.59</code> from Epoch 11.
+                </p>
+              </div>
+
+              <div class="contrib-card">
+                <h4>6. Scale Bottleneck &amp; Future VLA Roadmap</h4>
+                <p>
+                  Identified a critical resolution bottleneck between large defects (<code>AP<sub>Large</sub> =
+                    0.320</code>) and microscopic defects under 32<sup>2</sup> px (<code>AP<sub>Small</sub> =
+                    0.074</code>). Proposed projecting the 1024-D prototypical damage embeddings into Multimodal Large
+                  Language Models (MLLMs) and <strong>Vision-Language-Action (VLA)</strong> frameworks (Hu et al., 2025)
+                  for automated severity reasoning.
                 </p>
               </div>
             </div>
 
-            <!-- Empirical Results Table -->
-            <h3>📊 Empirical Evaluation on CarDD Benchmark</h3>
+            <!-- Empirical Results Table (Table 1 from Chapter 5.3) -->
+            <h3>📊 Quantitative Evaluation on CarDD Validation Set (Table 1, n = 810 Images)</h3>
             <div class="table-responsive">
               <table class="gh-table">
                 <thead>
                   <tr>
                     <th>Metric</th>
                     <th>Value</th>
-                    <th>IoU Threshold / Protocol</th>
-                    <th>Significance / Note</th>
+                    <th>Threshold / Formula</th>
+                    <th>Empirical Finding &amp; Diagnostic Significance</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><strong>Mean Average Precision (mAP)</strong></td>
+                    <td><strong>mAP (COCO Primary)</strong></td>
                     <td><span class="tag-metric">0.319</span></td>
-                    <td>IoU 0.50 : 0.95 (COCO standard)</td>
-                    <td>Strong instance segmentation across highly irregular damage shapes</td>
+                    <td>IoU = 0.50 : 0.95 (step 0.05)</td>
+                    <td>Competitive pixel-level instance segmentation; reaches peak ~32.2% at Epoch 11 without overfitting</td>
                   </tr>
                   <tr>
-                    <td><strong>AP@50</strong></td>
+                    <td><strong>AP@50 (PASCAL VOC)</strong></td>
                     <td><span class="tag-metric">0.630</span></td>
-                    <td>IoU 0.50</td>
-                    <td>Accurate localization and region proposals</td>
+                    <td>IoU = 0.50</td>
+                    <td>High reliability in localising and classifying exterior vehicle damage regions</td>
                   </tr>
                   <tr>
                     <td><strong>Average Recall (AR)</strong></td>
                     <td><span class="tag-metric">0.436</span></td>
-                    <td>100 detections max</td>
-                    <td>Robust retrieval of rare & long-tail minority defects</td>
+                    <td>MaxDets = 100</td>
+                    <td>Retrieves nearly half of all ground-truth instances, preventing minority-class collapse</td>
                   </tr>
                   <tr>
-                    <td><strong>Evaluation Dataset</strong></td>
-                    <td>810 test images</td>
-                    <td>CarDD Benchmark</td>
-                    <td>Extreme real-world exterior inspection conditions</td>
+                    <td><strong>F1-Score</strong></td>
+                    <td><span class="tag-metric">0.515</span></td>
+                    <td>2 &middot; (0.630 &middot; 0.436) / (0.630 + 0.436)</td>
+                    <td>Balanced harmonic mean between AP@50 precision and Average Recall</td>
                   </tr>
                   <tr>
-                    <td><strong>Prototypes Geometry</strong></td>
-                    <td>$1.91 \le d^2 \le 2.09$</td>
-                    <td>Unit Hypersphere ($\|p\| = 1$)</td>
-                    <td>Orthogonal class separation ($\theta \approx 90^\circ$)</td>
+                    <td><strong>AP (Large)</strong></td>
+                    <td><span class="tag-metric">0.320</span></td>
+                    <td>Area &gt; 96<sup>2</sup> px</td>
+                    <td>Strong detection and mask fidelity on macro-scale body panel and glass defects</td>
+                  </tr>
+                  <tr>
+                    <td><strong>AP (Small)</strong></td>
+                    <td><span class="gh-tag-pill tag-moderate">0.074</span></td>
+                    <td>Area &lt; 32<sup>2</sup> px</td>
+                    <td>Primary bottleneck: stride-32 downsampling limits resolution on tiny (&lt;32 px) scratches</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Prototype Separability</strong></td>
+                    <td><span class="tag-metric">1.90 &le; d<sup>2</sup> &le; 2.16</span></td>
+                    <td>‖p<sub>i</sub> &minus; p<sub>j</sub>‖<sub>2</sub><sup>2</sup> = 2 &minus; 2cos(&theta;)</td>
+                    <td>Off-diagonal centroids cluster tightly around 2.00 (&theta; &approx; 90&deg; orthogonality)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <!-- Interactive CarDD Defect Simulator -->
-            <h3>🚗 Interactive CarDD Defect Simulator & Inspection Telemetry</h3>
+            <!-- CarDD Training Class Distribution (Figure 4, Section 3.2) -->
+            <h3>📈 CarDD Training Set Long-Tail Distribution (Figure 4 &bull; 11.4 : 1 Imbalance Ratio)</h3>
             <p class="section-desc-sm">
-              Click the defect taxonomy chips below to simulate the Prototypical Mask R-CNN inference pipeline across
-              the
-              6 CarDD damage categories:
+              Statistical analysis across the training set annotations reveals a Zipfian power-law distribution between
+              high-frequency cosmetic head classes and safety-critical tail classes:
             </p>
-
-            <div class="gh-defect-chips-row">
-              <button class="defect-btn active" data-defect="dent" style="--d-color: #FF7A00;">
-                <span class="d-dot" style="background:#FF7A00;"></span>
-                <span>Dent</span>
-                <span class="d-code">#FF7A00</span>
-              </button>
-              <button class="defect-btn" data-defect="scratch" style="--d-color: #00D2FF;">
-                <span class="d-dot" style="background:#00D2FF;"></span>
-                <span>Scratch</span>
-                <span class="d-code">#00D2FF</span>
-              </button>
-              <button class="defect-btn" data-defect="crack" style="--d-color: #A855F7;">
-                <span class="d-dot" style="background:#A855F7;"></span>
-                <span>Crack</span>
-                <span class="d-code">#A855F7</span>
-              </button>
-              <button class="defect-btn" data-defect="glass" style="--d-color: #FF2A6D;">
-                <span class="d-dot" style="background:#FF2A6D;"></span>
-                <span>Glass Shatter</span>
-                <span class="d-code">#FF2A6D</span>
-              </button>
-              <button class="defect-btn" data-defect="lamp" style="--d-color: #FACC15;">
-                <span class="d-dot" style="background:#FACC15;"></span>
-                <span>Lamp Broken</span>
-                <span class="d-code">#FACC15</span>
-              </button>
-              <button class="defect-btn" data-defect="tire" style="--d-color: #10B981;">
-                <span class="d-dot" style="background:#10B981;"></span>
-                <span>Tire Flat</span>
-                <span class="d-code">#10B981</span>
-              </button>
+            <div class="table-responsive">
+              <table class="gh-table">
+                <thead>
+                  <tr>
+                    <th>Damage Category</th>
+                    <th>Instance Count (n)</th>
+                    <th>Distribution Tier</th>
+                    <th>Log<sub>2</sub>(W/H) Aspect Ratio &amp; Spatial Characteristics</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. Scratch</strong></td>
+                    <td><code>2,560</code></td>
+                    <td><span class="gh-tag-pill">Head (Majority)</span></td>
+                    <td>High aspect-ratio variance (<code>&minus;3 to +3</code>; 1:8 vertical to 8:1 horizontal lines)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. Dent</strong></td>
+                    <td><code>1,806</code></td>
+                    <td><span class="gh-tag-pill">Head (Majority)</span></td>
+                    <td>Clusters tightly around <code>0</code> (1:1 square aspect ratio), &#8730;Area centred at 100–200 px</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. Crack</strong></td>
+                    <td><code>651</code></td>
+                    <td><span class="gh-tag-pill">Mid-Tail</span></td>
+                    <td>Elongated structural fractures visually overlapping with surface scratches</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4. Lamp Broken</strong></td>
+                    <td><code>494</code></td>
+                    <td><span class="gh-tag-pill">Tail (Minority)</span></td>
+                    <td>Compact localized headlamp/taillight shatter patterns (d<sup>2</sup> = 2.04 vs Dent)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5. Glass Shatter</strong></td>
+                    <td><code>475</code></td>
+                    <td><span class="gh-tag-pill">Tail (Minority)</span></td>
+                    <td>Large-area windshield/window fractures with distinct high-frequency texture</td>
+                  </tr>
+                  <tr>
+                    <td><strong>6. Tire Flat</strong></td>
+                    <td><code>225</code></td>
+                    <td><span class="gh-tag-pill tag-moderate">Extreme Tail (11.4&times; rarer)</span></td>
+                    <td>Rarest safety-critical class; retains dedicated prototype centroid without gradient crowding</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
-            <!-- Simulator Body -->
-            <div class="sim-dashboard">
-              <!-- Visual Canvas Simulation -->
-              <div class="sim-viewport">
-                <div class="car-frame-canvas">
-                  <svg viewBox="0 0 500 210" class="car-svg" fill="none">
-                    <!-- Clean vehicle silhouette -->
-                    <path
-                      d="M35 150 H75 C85 115 140 115 150 150 H330 C340 115 395 115 405 150 H465 C475 150 485 140 475 120 L425 85 C405 68 375 58 325 58 H175 C145 58 108 78 78 105 L35 132 C25 142 25 150 35 150 Z"
-                      stroke="#30363d" stroke-width="2" fill="#161b22" />
-                    <!-- Windows -->
-                    <path d="M175 70 H320 C340 70 370 76 385 90 L415 114 H145 L170 76 C173 72 175 70 175 70 Z"
-                      fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
-                    <!-- Wheels -->
-                    <circle cx="112" cy="150" r="30" fill="#0d1117" stroke="#58a6ff" stroke-width="2.5" />
-                    <circle cx="112" cy="150" r="12" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
-                    <circle cx="368" cy="150" r="30" fill="#0d1117" stroke="#58a6ff" stroke-width="2.5" />
-                    <circle cx="368" cy="150" r="12" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
-                    <!-- Headlights / Taillights -->
-                    <polygon points="460 122 474 127 470 137 456 132" fill="#FACC15" opacity="0.9" />
-                    <polygon points="35 132 28 136 30 146 39 142" fill="#FF2A6D" opacity="0.9" />
-                  </svg>
-
-                  <!-- Dynamic Bounding Box Overlay -->
-                  <div class="sim-bbox active" id="sim-bbox" style="top: 36%; left: 45%; border-color: #FF7A00;">
-                    <span class="bbox-label" style="background-color: #FF7A00;">Dent: 96.8%</span>
-                    <div class="bbox-mask" style="background-color: rgba(255, 122, 0, 0.25);"></div>
-                  </div>
-                </div>
-
-                <div class="sim-controls-strip">
-                  <div class="sim-slider-group">
-                    <label for="conf-slider">Confidence Threshold: <strong id="conf-val">0.75</strong></label>
-                    <input type="range" id="conf-slider" min="0.05" max="0.95" step="0.05" value="0.75">
-                  </div>
-                  <div class="sim-slider-group">
-                    <label for="iou-slider">NMS IoU Threshold: <strong id="iou-val">0.45</strong></label>
-                    <input type="range" id="iou-slider" min="0.10" max="0.70" step="0.05" value="0.45">
-                  </div>
-                </div>
-              </div>
-
-              <!-- Live KPI Telemetry Sidebar -->
-              <div class="sim-telemetry">
-                <div class="telemetry-item">
-                  <span class="telemetry-label">Predicted Class</span>
-                  <span class="telemetry-value" id="kpi-damage-type">Door & Panel Dent</span>
-                  <span class="telemetry-sub" id="kpi-color-code">Hex Code: #FF7A00</span>
-                </div>
-
-                <div class="telemetry-item">
-                  <span class="telemetry-label">Prediction Confidence</span>
-                  <span class="telemetry-value text-green" id="kpi-confidence">96.8%</span>
-                  <div class="telemetry-bar">
-                    <div class="telemetry-fill" id="kpi-conf-meter" style="width: 96.8%; background:#FF7A00;"></div>
-                  </div>
-                </div>
-
-                <div class="telemetry-item">
-                  <span class="telemetry-label">Cluster Instances</span>
-                  <span class="telemetry-value" id="kpi-total-defects">2 Instances Detected</span>
-                  <span class="telemetry-sub">RoI Dimension: 1024-D</span>
-                </div>
-
-                <div class="telemetry-item">
-                  <span class="telemetry-label">Inspection Grading</span>
-                  <span class="gh-tag-pill tag-moderate" id="kpi-severity">Moderate Damage</span>
-                  <span class="telemetry-sub">Repair Required</span>
-                </div>
-              </div>
+            <!-- Pairwise Squared Euclidean Distance Matrix (Figure 11, Section 5.4) -->
+            <h3>🧭 Learned Prototype Pairwise Squared Euclidean Distance Matrix (Figure 11)</h3>
+            <p class="section-desc-sm">
+              Exact pairwise squared Euclidean distances <code>d<sup>2</sup>(p<sub>i</sub>, p<sub>j</sub>) =
+                ‖p<sub>i</sub> &minus; p<sub>j</sub>‖<sub>2</sub><sup>2</sup></code> between L<sub>2</sub>-normalised
+              1024-D class prototypes after training. Diagonal values (<code>0.00</code>) confirm self-identity
+              (&theta; = 0&deg;), while off-diagonal values cluster around <code>2.00</code> (&theta; &approx; 90&deg;),
+              proving orthogonal class separation:
+            </p>
+            <div class="table-responsive">
+              <table class="gh-table">
+                <thead>
+                  <tr>
+                    <th>Class Prototype</th>
+                    <th>Background</th>
+                    <th>dent</th>
+                    <th>scratch</th>
+                    <th>crack</th>
+                    <th>glass shatter</th>
+                    <th>lamp broken</th>
+                    <th>tire flat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Background</strong></td>
+                    <td><code>0.00</code></td>
+                    <td><span class="tag-metric">1.91</span></td>
+                    <td><span class="tag-metric">1.96</span></td>
+                    <td><span class="tag-metric">1.99</span></td>
+                    <td><span class="tag-metric">2.06</span></td>
+                    <td><span class="tag-metric">2.01</span></td>
+                    <td><span class="tag-metric">2.09</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>dent</strong></td>
+                    <td><span class="tag-metric">1.91</span></td>
+                    <td><code>0.00</code></td>
+                    <td><span class="tag-metric">1.91</span></td>
+                    <td><span class="tag-metric">1.99</span></td>
+                    <td><span class="tag-metric">1.98</span></td>
+                    <td><span class="tag-metric">2.04</span></td>
+                    <td><span class="tag-metric">2.06</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>scratch</strong></td>
+                    <td><span class="tag-metric">1.96</span></td>
+                    <td><span class="tag-metric">1.91</span></td>
+                    <td><code>0.00</code></td>
+                    <td><span class="tag-metric">1.90</span></td>
+                    <td><span class="tag-metric">2.16</span></td>
+                    <td><span class="tag-metric">1.94</span></td>
+                    <td><span class="tag-metric">2.05</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>crack</strong></td>
+                    <td><span class="tag-metric">1.99</span></td>
+                    <td><span class="tag-metric">1.99</span></td>
+                    <td><span class="tag-metric">1.90</span></td>
+                    <td><code>0.00</code></td>
+                    <td><span class="tag-metric">1.95</span></td>
+                    <td><span class="tag-metric">1.99</span></td>
+                    <td><span class="tag-metric">2.09</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>glass shatter</strong></td>
+                    <td><span class="tag-metric">2.06</span></td>
+                    <td><span class="tag-metric">1.98</span></td>
+                    <td><span class="tag-metric">2.16</span></td>
+                    <td><span class="tag-metric">1.95</span></td>
+                    <td><code>0.00</code></td>
+                    <td><span class="tag-metric">1.98</span></td>
+                    <td><span class="tag-metric">1.97</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>lamp broken</strong></td>
+                    <td><span class="tag-metric">2.01</span></td>
+                    <td><span class="tag-metric">2.04</span></td>
+                    <td><span class="tag-metric">1.94</span></td>
+                    <td><span class="tag-metric">1.99</span></td>
+                    <td><span class="tag-metric">1.98</span></td>
+                    <td><code>0.00</code></td>
+                    <td><span class="tag-metric">2.01</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>tire flat</strong></td>
+                    <td><span class="tag-metric">2.09</span></td>
+                    <td><span class="tag-metric">2.06</span></td>
+                    <td><span class="tag-metric">2.05</span></td>
+                    <td><span class="tag-metric">2.09</span></td>
+                    <td><span class="tag-metric">1.97</span></td>
+                    <td><span class="tag-metric">2.01</span></td>
+                    <td><code>0.00</code></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ const FALLBACK_REPOS = [
   {
     name: "Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-",
     displayName: "Masters-thesis-project-Prototypical-Mask-R-CNN",
-    description: "Prototypical Mask R-CNN for Vehicle Exterior Damage Detection (7COM1039). Hybrid instance segmentation combining Deep Metric Learning with Squared Euclidean Prototypical Predictor head on the CarDD benchmark. Evaluated across 810 test images (mAP: 0.319, AP@50: 0.630, AR: 0.436).",
+    description: "Prototypical Mask R-CNN for Vehicle Exterior Damage Detection (7COM1039-0901-2025). Hybrid instance segmentation combining Deep Metric Learning with a Squared Euclidean Prototypical Box Predictor head on the CarDD benchmark (4,000 images). Achieved mAP: 0.319, AP@50: 0.630, AR: 0.436, F1-Score: 0.515 across 810 validation images.",
     language: "Python",
     html_url: "https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-",
     stargazers_count: 1,
