@@ -63,7 +63,6 @@ const LANGUAGE_COLORS = {
 document.addEventListener("DOMContentLoaded", () => {
   initTabs();
   initSimulator();
-  initTerminal();
   initClipboard();
   initRepositories();
   initSearch();
@@ -113,7 +112,7 @@ function initTabs() {
 
   // Check URL hash on initial load
   const hash = window.location.hash.replace("#", "");
-  const validTabs = ["overview", "research", "repositories", "experience", "skills", "terminal", "contact"];
+  const validTabs = ["overview", "research", "repositories", "experience", "skills", "contact"];
   if (hash && validTabs.includes(hash)) {
     switchTab(hash);
   }
@@ -462,166 +461,7 @@ function initSimulator() {
 }
 
 // ==========================================
-// 7. INTERACTIVE ACADEMIC GIT CLI TERMINAL
-// ==========================================
-function initTerminal() {
-  const form = document.getElementById("terminal-form");
-  const input = document.getElementById("term-input");
-  const history = document.getElementById("terminal-history");
-  const chips = document.querySelectorAll(".terminal-chips-row .gh-chip");
-
-  if (!form || !input || !history) return;
-
-  const COMMANDS = {
-    help: () => `
-      <div class="term-line term-accent">Available Academic Commands:</div>
-      <div class="term-line">  <span class="term-green">cat thesis.md</span>          Display Master's thesis architecture & results</div>
-      <div class="term-line">  <span class="term-green">cat education.md</span>       Inspect degree qualifications (Hertfordshire & BIT)</div>
-      <div class="term-line">  <span class="term-green">cat experience.md</span>      View industry experience at Quantanite</div>
-      <div class="term-line">  <span class="term-green">cat lab_alignment.md</span>   Review UrbanITY Lab alignment & research statement</div>
-      <div class="term-line">  <span class="term-green">zahidul --skills</span>       Comprehensive technical and mathematical stack</div>
-      <div class="term-line">  <span class="term-green">neofetch</span>               Render developer & research environment specs</div>
-      <div class="term-line">  <span class="term-green">git status</span>             Show active repository status & branch</div>
-      <div class="term-line">  <span class="term-green">git log</span>                Inspect recent Git commits</div>
-      <div class="term-line">  <span class="term-green">curl github/zahidul</span>    Fetch structured profile JSON payload</div>
-      <div class="term-line">  <span class="term-green">clear</span>                  Clear the terminal console screen</div>
-    `,
-    "cat thesis.md": () => `
-      <div class="term-line term-accent"># Prototypical Mask R-CNN for Vehicle Exterior Damage Detection</div>
-      <div class="term-line">Master's Final Research Project (7COM1039) &bull; University of Hertfordshire</div>
-      <div class="term-line">Supervisor: Dr. Joseph Reddington &bull; Period: Sep 2024 - 2025</div>
-      <div class="term-line">----------------------------------------------------------------------</div>
-      <div class="term-line">&bull; <span class="term-gold">Architecture:</span> Prototypical Mask R-CNN with ResNet-50-FPN backbone</div>
-      <div class="term-line">&bull; <span class="term-gold">Core Innovation:</span> Squared Euclidean Prototypical Predictor head replacing linear classification</div>
-      <div class="term-line">&bull; <span class="term-gold">Latent Geometry:</span> L2 normalised 1024-D RoI embeddings (||p|| = 1), d^2 = 2 - 2cos(theta) approx 2.0 (theta approx 90 deg)</div>
-      <div class="term-line">&bull; <span class="term-gold">CarDD Benchmark:</span> 810 test images &bull; mAP: 0.319 (IoU 0.50:0.95), AP@50: 0.630, AR: 0.436</div>
-      <div class="term-line">&bull; <span class="term-gold">Repository:</span> <a href="https://github.com/ZAHIDUL-HOQUE/Masters-thesis-project-of-Zahidul-Hoque-University-of-Hertfordshire-Student-id-23097240-" target="_blank" class="term-blue">github.com/ZAHIDUL-HOQUE/Masters-thesis-project...</a></div>
-    `,
-    "cat education.md": () => `
-      <div class="term-line term-accent"># Academic Qualifications:</div>
-      <div class="term-line">1. <span class="term-green">M.Sc. in Data Science and Analytics with Advanced Research</span> (Sep 2024 - Present)</div>
-      <div class="term-line">   University of Hertfordshire, Hatfield, United Kingdom</div>
-      <div class="term-line">   Focus: Advanced Computer Vision, Deep Learning, Deep Metric Learning, Neural Networks.</div>
-      <br>
-      <div class="term-line">2. <span class="term-green">B.Sc. in Computer Science</span> (Sep 2019 - Jun 2023)</div>
-      <div class="term-line">   Beijing Institute of Technology (BIT), Beijing, China</div>
-      <div class="term-line">   Curriculum: Data Structures, Algorithms, Linear Algebra, Calculus, Operating Systems.</div>
-    `,
-    "cat experience.md": () => `
-      <div class="term-line term-accent"># Work & Project Experience:</div>
-      <div class="term-line">&bull; <span class="term-gold">Project Associate (Computer Vision & Data Annotation)</span></div>
-      <div class="term-line">  Quantanite &bull; Dhaka, Bangladesh &bull; Feb 2023 - Mar 2023</div>
-      <div class="term-line">  - Executed high-precision data annotation, bounding box generation, and segmentation mask labeling.</div>
-      <div class="term-line">  - Systematic data cleaning and quality auditing to eliminate label noise.</div>
-    `,
-    "cat lab_alignment.md": () => `
-      <div class="term-line term-accent"># UrbanITY Lab Alignment & Ph.D. Research Statement:</div>
-      <div class="term-line">1. <span class="term-gold">LiDAR & Camera Sensor Fusion:</span> Multi-scale FPN hierarchies & metric latent spaces for 3D roadside/vehicle detection (DINOSTAR, LiGuard).</div>
-      <div class="term-line">2. <span class="term-gold">Digital Twins & Sim2Real:</span> Tackling domain shifts between synthetic digital twins (LUMPI, V2X-Real-IC, TUMTraf-I) and real sensor streams.</div>
-      <div class="term-line">3. <span class="term-gold">Traffic Safety & VRU:</span> Deep learning for vulnerable road user detection and smart work zone safety.</div>
-    `,
-    "zahidul --skills": () => `
-      <div class="term-line"><span class="term-purple">[Languages]:</span> Python (Proficient), C/C++, SQL, Bash, JavaScript</div>
-      <div class="term-line"><span class="term-blue">[CV & AI]:</span>    PyTorch, Torchvision, Mask R-CNN, Faster R-CNN, FPN, Deep Metric Learning, OpenCV, Scikit-learn</div>
-      <div class="term-line"><span class="term-green">[Math]:</span>       Multivariable Calculus, Linear Algebra, Vector Geometry, Probability, Optimization</div>
-      <div class="term-line"><span class="term-gold">[Dev Tools]:</span>  Git, GitHub, Linux/Ubuntu, NVIDIA CUDA, Mixed Precision (AMP), Jupyter, LaTeX</div>
-    `,
-    neofetch: () => `
-      <div class="term-line"><span class="term-green">   .---.     </span> <span class="term-accent">zahidul@github-academic-hub</span></div>
-      <div class="term-line"><span class="term-green">  /     \\    </span> ---------------------------</div>
-      <div class="term-line"><span class="term-green"> | () () |   </span> <span class="term-gold">Researcher:</span> Zahidul Hoque</div>
-      <div class="term-line"><span class="term-green">  \\  _  /    </span> <span class="term-gold">Degree:</span> MSc Data Science with Advanced Research</div>
-      <div class="term-line"><span class="term-green">   \`---\`     </span> <span class="term-gold">Institute:</span> University of Hertfordshire, UK</div>
-      <div class="term-line"><span class="term-green">  /|   |\\    </span> <span class="term-gold">Undergrad:</span> Beijing Institute of Technology (BIT)</div>
-      <div class="term-line"><span class="term-green"> / |   | \\   </span> <span class="term-gold">Location:</span> Ilford, London, United Kingdom</div>
-      <div class="term-line"><span class="term-green">   |   |     </span> <span class="term-gold">Specialization:</span> Computer Vision & Autonomous Systems</div>
-      <div class="term-line"><span class="term-green">   |___|     </span> <span class="term-gold">Framework:</span> PyTorch + NVIDIA CUDA (AMP)</div>
-    `,
-    "git status": () => `
-      <div class="term-line">On branch <span class="term-purple">main</span></div>
-      <div class="term-line">Your branch is up to date with '<span class="term-blue">origin/main</span>'.</div>
-      <div class="term-line">Working tree clean. All code synchronized with <a href="https://github.com/ZAHIDUL-HOQUE" target="_blank" class="term-blue">github.com/ZAHIDUL-HOQUE</a>.</div>
-    `,
-    "git log": () => `
-      <div class="term-line"><span class="term-gold">commit 8a1e2f9d4c (HEAD -> main, origin/main)</span></div>
-      <div class="term-line">Author: Zahidul Hoque &lt;zh24abg@herts.ac.uk&gt;</div>
-      <div class="term-line">    feat: Implement Prototypical Mask R-CNN head & CarDD evaluation suite</div>
-      <br>
-      <div class="term-line"><span class="term-gold">commit 3b4c5d6e7f</span></div>
-      <div class="term-line">Author: Zahidul Hoque &lt;zahidulhoqueomy@gmail.com&gt;</div>
-      <div class="term-line">    refactor: Enforce hyperspherical latent geometry (||p|| = 1) and orthogonal spacing</div>
-    `,
-    "git log -n 2": () => COMMANDS["git log"](),
-    "curl github/zahidul": () => `
-      <div class="term-line">{</div>
-      <div class="term-line">  "login": "ZAHIDUL-HOQUE",</div>
-      <div class="term-line">  "name": "ZAHIDUL HOQUE",</div>
-      <div class="term-line">  "degree": "M.Sc. in Data Science and Analytics with Advanced Research",</div>
-      <div class="term-line">  "institution": "University of Hertfordshire",</div>
-      <div class="term-line">  "undergraduate": "Beijing Institute of Technology (BIT)",</div>
-      <div class="term-line">  "location": "Ilford, London, UK",</div>
-      <div class="term-line">  "thesis": "Prototypical Mask R-CNN for Vehicle Exterior Damage Detection",</div>
-      <div class="term-line">  "supervisor": "Dr. Joseph Reddington",</div>
-      <div class="term-line">  "status": "Aspiring Ph.D. Researcher"</div>
-      <div class="term-line">}</div>
-    `,
-    clear: () => "CLEAR_SIGNAL"
-  };
-
-  function executeCommand(raw) {
-    const cmd = raw.trim().toLowerCase();
-    
-    // Add command echo
-    const echo = document.createElement("div");
-    echo.className = "term-line";
-    echo.innerHTML = `<span class="term-user">zahidul</span><span class="term-at">@</span><span class="term-host">github</span>:<span class="term-path">~</span>$&nbsp;<span class="term-cmd">${raw}</span>`;
-    history.appendChild(echo);
-
-    if (cmd === "clear") {
-      history.innerHTML = "";
-      return;
-    }
-
-    if (cmd === "") return;
-
-    const handler = COMMANDS[cmd];
-    const out = document.createElement("div");
-    out.className = "term-line";
-
-    if (handler) {
-      out.innerHTML = handler();
-    } else {
-      out.innerHTML = `<span style="color: var(--danger-fg);">bash: command not found: ${raw}. Type <span class="term-green">help</span> for a list of valid commands.</span>`;
-    }
-
-    history.appendChild(out);
-
-    const screen = document.getElementById("terminal-screen");
-    if (screen) screen.scrollTop = screen.scrollHeight;
-  }
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const val = input.value;
-    if (val.trim()) {
-      executeCommand(val);
-      input.value = "";
-    }
-  });
-
-  chips.forEach(chip => {
-    chip.addEventListener("click", () => {
-      const cmd = chip.getAttribute("data-cmd");
-      input.value = cmd;
-      executeCommand(cmd);
-      input.value = "";
-      input.focus();
-    });
-  });
-}
-
-// ==========================================
-// 8. CLIPBOARD & TOAST NOTIFICATION
+// 7. CLIPBOARD & TOAST NOTIFICATION
 // ==========================================
 function initClipboard() {
   document.addEventListener("click", (e) => {

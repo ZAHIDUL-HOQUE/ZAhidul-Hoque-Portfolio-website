@@ -10,7 +10,7 @@ Built using **Vanilla Web Standards (HTML5, Vanilla CSS3, Modern JavaScript)** a
 
 1. **GitHub Native Profile Layout**:
    - Iconic GitHub two-column structure with left user sidebar (pixel-art avatar, status badge, verified contact metadata, achievements, and academic supervisor reference).
-   - Underline profile tab navigation with URL hash synchronisation (`#overview`, `#research`, `#repositories`, `#experience`, `#skills`, `#terminal`, `#contact`).
+   - Underline profile tab navigation with URL hash synchronisation (`#overview`, `#research`, `#repositories`, `#experience`, `#skills`, `#contact`).
 
 2. **Academic & Research Integration**:
    - Comprehensive integration of all qualifications, publications, research contributions, and career milestones.
@@ -21,17 +21,8 @@ Built using **Vanilla Web Standards (HTML5, Vanilla CSS3, Modern JavaScript)** a
    - Empirical evaluation metrics across 810 test images: **mAP 0.319 (IoU 0.50:0.95)**, **AP@50 0.630**, **AR 0.436**.
    - Interactive CarDD Defect Inspector & Telemetry Simulator with 6 defect classes (`Dent`, `Scratch`, `Crack`, `Glass Shatter`, `Lamp Broken`, `Tire Flat`).
 
-4. **UrbanITY Lab Alignment & Ph.D. Research Statement**:
-   - Multi-scale LiDAR & Camera sensor fusion (DINOSTAR, LiGuard).
-   - Digital twins & Sim2Real domain shift mitigation (UrbanTwin, LUMPI, V2X-Real-IC, TUMTraf-I).
-   - Real-time deep learning for traffic safety & Vulnerable Road User (VRU) protection.
-
-5. **Live Repositories & 52-Week Contribution Calendar**:
+4. **Live Repositories**:
    - Filterable repositories list with instant search and language category tabs (`All`, `Python & AI`, `Web`).
-   - GitHub contribution graph modeled with authentic dark-theme contribution scales.
-
-6. **Interactive Academic Git CLI / Terminal**:
-   - Bash console supporting commands: `cat thesis.md`, `cat education.md`, `cat experience.md`, `cat lab_alignment.md`, `zahidul --skills`, `neofetch`, `git status`, `git log`, `curl github/zahidul`, `help`, and `clear`.
 
 ---
 
