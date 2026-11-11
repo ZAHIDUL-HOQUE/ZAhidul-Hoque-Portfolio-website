@@ -62,11 +62,40 @@ const LANGUAGE_COLORS = {
 // ==========================================
 document.addEventListener("DOMContentLoaded", () => {
   initTabs();
+  initAvatarFlip();
   initSimulator();
   initClipboard();
   initRepositories();
   initSearch();
 });
+
+// ==========================================
+// 2.5 PROFILE AVATAR 3D FLIP TRANSITION
+// ==========================================
+function initAvatarFlip() {
+  const flipCard = document.getElementById("avatar-flip-card");
+  const headerAvatar = document.querySelector(".gh-header-avatar");
+  if (!flipCard) return;
+
+  function toggleFlip() {
+    const isFlipped = flipCard.classList.toggle("is-flipped");
+    if (headerAvatar) {
+      headerAvatar.classList.toggle("is-flipped", isFlipped);
+      setTimeout(() => {
+        headerAvatar.src = isFlipped ? "pic.jpg" : "pixelated pic.jpg";
+        headerAvatar.style.imageRendering = isFlipped ? "auto" : "pixelated";
+      }, 150);
+    }
+  }
+
+  flipCard.addEventListener("click", toggleFlip);
+  flipCard.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleFlip();
+    }
+  });
+}
 
 // ==========================================
 // 3. GITHUB UNDERLINE TAB SWITCHING

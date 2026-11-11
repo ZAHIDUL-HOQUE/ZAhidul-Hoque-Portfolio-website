@@ -147,9 +147,20 @@
     <!-- LEFT SIDEBAR: Authentic GitHub User Profile -->
     <aside class="gh-sidebar" id="profile-sidebar">
       <div class="gh-sidebar-inner">
-        <!-- Avatar Wrapper with Status Pill -->
+        <!-- Avatar Wrapper with 3D Flip & Status Pill -->
         <div class="gh-avatar-wrapper">
-          <img src="pixelated pic.jpg" alt="Zahidul Hoque" class="gh-profile-avatar" id="profile-avatar">
+          <div class="gh-avatar-flip-card" id="avatar-flip-card" role="button" tabindex="0"
+            aria-label="Click to flip between pixelated and real profile photo" title="Click to flip photo">
+            <div class="gh-avatar-flipper">
+              <div class="gh-avatar-face gh-avatar-front">
+                <img src="pixelated pic.jpg" alt="Zahidul Hoque (Pixelated)" class="gh-profile-avatar gh-avatar-pixelated"
+                  id="profile-avatar">
+              </div>
+              <div class="gh-avatar-face gh-avatar-back">
+                <img src="pic.jpg" alt="Zahidul Hoque" class="gh-profile-avatar gh-avatar-real">
+              </div>
+            </div>
+          </div>
           <div class="gh-status-badge gh-status-highlighted" title="Status: Seeking Ph.D. / Research Roles">
             <span class="gh-status-beacon" aria-hidden="true">
               <span class="gh-beacon-ping"></span>

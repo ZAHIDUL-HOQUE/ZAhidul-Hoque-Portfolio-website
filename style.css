@@ -343,15 +343,77 @@ a:hover {
   max-width: 296px;
 }
 
+.gh-avatar-flip-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  user-select: none;
+}
+
+.gh-avatar-flip-card:focus-visible .gh-avatar-face {
+  box-shadow: 0 0 0 2px var(--accent-fg);
+}
+
+.gh-avatar-flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.gh-avatar-flip-card.is-flipped .gh-avatar-flipper {
+  transform: rotateY(180deg);
+}
+
+.gh-avatar-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gh-avatar-flip-card:hover .gh-avatar-face {
+  box-shadow: 0 0 18px rgba(88, 166, 255, 0.3);
+}
+
+.gh-avatar-back {
+  transform: rotateY(180deg);
+}
+
 .gh-profile-avatar {
   width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border-default);
   background-color: var(--canvas-subtle);
-  image-rendering: pixelated;
   display: block;
+}
+
+.gh-avatar-pixelated {
+  image-rendering: pixelated;
+}
+
+.gh-avatar-real {
+  image-rendering: auto;
+}
+
+.gh-header-avatar {
+  transition: transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.gh-header-avatar.is-flipped {
+  transform: rotateY(180deg);
 }
 
 /* GitHub Status Emoji / Pill - Prominently Highlighted */
