@@ -46,7 +46,8 @@ const FALLBACK_REPOS = [
 
 const EXCLUDED_REPOS = [
   "portfolio-website-for-shuvo-sultan",
-  "zahidul-hoque-portfolio-website"
+  "zahidul-hoque-portfolio-website",
+  "zahidul-hoque.github.io"
 ];
 
 const LANGUAGE_COLORS = {
