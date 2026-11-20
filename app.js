@@ -141,7 +141,7 @@ function initTabs() {
 
   // Check URL hash on initial load
   const hash = window.location.hash.replace("#", "");
-  const validTabs = ["overview", "research", "repositories", "experience", "skills", "contact"];
+  const validTabs = ["overview", "experience", "skills", "research", "repositories", "contact"];
   if (hash && validTabs.includes(hash)) {
     switchTab(hash);
   }

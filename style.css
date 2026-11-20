@@ -308,6 +308,31 @@ a:hover {
   padding: 1px 6px;
 }
 
+.gh-tab-contact-glow {
+  color: #56d364;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(63, 185, 80, 0.55);
+  background: radial-gradient(ellipse at center, rgba(63, 185, 80, 0.14) 0%, transparent 75%);
+  animation: contact-tab-glow 2.4s infinite ease-in-out;
+}
+
+.gh-tab-contact-glow:hover,
+.gh-tab-contact-glow.active {
+  color: #7ee787;
+  text-shadow: 0 0 14px rgba(86, 211, 100, 0.85);
+}
+
+@keyframes contact-tab-glow {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(63, 185, 80, 0.45);
+    background: radial-gradient(ellipse at center, rgba(63, 185, 80, 0.12) 0%, transparent 75%);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(86, 211, 100, 0.9), 0 0 24px rgba(63, 185, 80, 0.5);
+    background: radial-gradient(ellipse at center, rgba(63, 185, 80, 0.24) 0%, transparent 75%);
+  }
+}
+
 /* ==========================================================================
    Page Layout: 2 Columns (Sidebar + Main)
    ========================================================================== */
